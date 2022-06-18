@@ -45,10 +45,10 @@ The _config.yml file under the theme directory has the lowest priority.
 > > icon->animated  
 > 
 > back2top: scrollpercent  
+> canvas_ribbon
 > npm install hexo-generator-searchdb  
 > hexo new page tags  
 > tag_icon: true  
-> hexo new page tags  
 > 帖子部分显示，存在显示全文：<!--more-->
 
 
