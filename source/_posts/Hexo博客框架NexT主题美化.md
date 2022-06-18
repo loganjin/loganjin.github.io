@@ -23,7 +23,7 @@ The _config.yml file under the theme directory has the lowest priority.
 
 
 ## _config.yml美化
-> title: LOGAN×LIFE  
+> title: LIFE×WORK  
 > subtitle: '知命不惧，日日自新'  
 > description: '嘿，开心一点嘛'  
 > author: Logan Jin  
