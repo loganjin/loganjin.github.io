@@ -1,5 +1,5 @@
 ---
-title: 基于Hexo的多设备博客管理
+title: 基于Hexo博客框架的多设备博客管理
 date: 2022/6/18
 tags:
 - Hexo
