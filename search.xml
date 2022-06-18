@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>/2022/06/18/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="loganjin个人博客搭建"><a href="#loganjin个人博客搭建" class="headerlink" title="loganjin个人博客搭建"></a>loganjin个人博客搭建</h1><p>本博客基于Hexo框架搭建，<br>使用NexT主题。</p>
+<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
+<p>动态博客</p>
+<blockquote>
+<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>静态博客  </p>
+<blockquote>
+<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
+</blockquote>
+</blockquote>
+<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装Hexo</span><br><span class="line">npm i hexo-cli -g</span><br><span class="line"></span><br><span class="line"># 初始化博客</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 在_config.yml中修改参数</span><br><span class="line">type: git</span><br><span class="line">repository: git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line">branch: main</span><br><span class="line"></span><br><span class="line"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"># 生成静态文件</span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"># 一键部署</span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"># 文件生成后立即部署网站</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
+<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
+<blockquote>
+<p>_config.yml: 主题配置文件  </p>
+</blockquote>
+<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
+</blockquote>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>前期配置好nodejs、git。</li>
+<li>所有命令在目标文件夹的git bash中执行。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% extends &#x27;_layout.swig&#x27; %&#125; &#123;% import &#x27;_macro/post.swig&#x27; as post_template %&#125; &#123;% import &#x27;_macro/sidebar.swig&#x27; as sidebar_template %&#125; &#123;% block title %&#125;&#123;&#123; config.title &#125;&#125;&#123;% if theme.index_with_subtitle and config.subtitle %&#125; - &#123;&#123;config.subtitle &#125;&#125;&#123;% endif %&#125;&#123;% endblock %&#125; &#123;% block page_class %&#125; &#123;% if is_home() %&#125;page-home&#123;% endif -%&#125; &#123;% endblock %&#125; &#123;% block content %&#125;</span><br><span class="line">&#123;% for post in page.posts %&#125; &#123;&#123; post_template.render(post, true) &#125;&#125; &#123;% endfor %&#125;&#123;% include &#x27;_partials/pagination.swig&#x27; %&#125; &#123;% endblock %&#125; &#123;% block sidebar %&#125; &#123;&#123; sidebar_template.render(false) &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+install <code>hexo-renderer-swig</code> manually:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>基于Hexo的多设备博客管理</title>
+    <url>/2022/06/17/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
+<span id="more"></span>
+
+<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 创建本地blog文件夹，同步到GitHub。</span><br><span class="line"></span><br><span class="line"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span><br><span class="line"></span><br><span class="line"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以clone时只clone了hexo分支，clone这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line">#将.git文件夹复制到本地blog文件夹。</span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git clone主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span><br><span class="line"></span><br><span class="line"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span><br><span class="line"></span><br><span class="line"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的.git文件夹会覆盖我们需要的.git文件夹。</span><br><span class="line"></span><br><span class="line"># 修改_config.yml中的deploy参数为main。</span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>programmer</category>
+      </categories>
+      <tags>
+        <tag>programmer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/06/17/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
