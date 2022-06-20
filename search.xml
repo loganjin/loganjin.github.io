@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">categories:</span><br><span class="line">- programmer</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [programmer]</span><br><span class="line">- [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>programmer</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VSCode配置</title>
+    <url>/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>对VSCode配置进行总结。</p>
+<span id="more"></span>
+
+
+<h2 id="VSCode快捷键"><a href="#VSCode快捷键" class="headerlink" title="VSCode快捷键"></a>VSCode快捷键</h2><ul>
+<li>跳到下一行：Ctrl + Enter</li>
+<li>单行注释：Ctrl + /</li>
+<li>多行注释：Ctrl + Shift + /<blockquote>
+<p>VSCode默认为Shift + Alt + A，需要手动修改</p>
+</blockquote>
+</li>
+<li>添加多个光标：Ctrl + Alt + 上下箭头</li>
+</ul>
+<h2 id="VSCode插件"><a href="#VSCode插件" class="headerlink" title="VSCode插件"></a>VSCode插件</h2><h3 id="VSCode基础插件"><a href="#VSCode基础插件" class="headerlink" title="VSCode基础插件"></a>VSCode基础插件</h3><table>
+<thead>
+<tr>
+<th>插件名称</th>
+<th>插件作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>One Dark Pro</td>
+<td>暗黑主题，选择One Dark Pro Darker</td>
+</tr>
+<tr>
+<td>vscode-icons</td>
+<td>替换成好认的图标</td>
+</tr>
+<tr>
+<td>indent-rainbow</td>
+<td>s使得缩进更好认（交替四种颜色，错了变红）</td>
+</tr>
+<tr>
+<td>Indenticator</td>
+<td>Highlights your current indent depth</td>
+</tr>
+<tr>
+<td>Code Spell Checker</td>
+<td>Spelling checker for source code</td>
+</tr>
+<tr>
+<td>Project Manager</td>
+<td>Easily switch between projects</td>
+</tr>
+<tr>
+<td>Markdown All in One</td>
+<td>All you need to write Markdown</td>
+</tr>
+<tr>
+<td>Bookmarks</td>
+<td>Mark lines and jump to them</td>
+</tr>
+<tr>
+<td>GitLens — Git supercharged</td>
+<td>相比于VSCode内置Git，增加了branches、remotes、stashes、tags、contributors</td>
+</tr>
+<tr>
+<td>Git Graph</td>
+<td>图形化显示提交历史</td>
+</tr>
+</tbody></table>
+<h3 id="VSCode前端插件"><a href="#VSCode前端插件" class="headerlink" title="VSCode前端插件"></a>VSCode前端插件</h3><table>
+<thead>
+<tr>
+<th>插件名称</th>
+<th>插件作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Live Server</td>
+<td>Launch a development local Server with live reload feature for static &amp; dynamic pages</td>
+</tr>
+<tr>
+<td>Image preview</td>
+<td>光标悬浮在图片路径上时，显示图片预览</td>
+</tr>
+<tr>
+<td>Auto Rename Tag</td>
+<td>Auto rename paired HTML/XML tag</td>
+</tr>
+<tr>
+<td>Auto Close Tag</td>
+<td>Automatically add HTML/XML close tag</td>
+</tr>
+<tr>
+<td>CSS Peek</td>
+<td>Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition</td>
+</tr>
+<tr>
+<td>Vetur</td>
+<td>Syntax highlighting</td>
+</tr>
+<tr>
+<td>Vue 3 Snippets</td>
+<td>A Vue.js 3 And Vue.js 2 Code Snippets Extension</td>
+</tr>
+<tr>
+<td>ESLint</td>
+<td>代码质量校验工具</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>programmer</category>
+      </categories>
+      <tags>
+        <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架NexT主题美化</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
@@ -20,30 +156,6 @@
 </blockquote>
 <p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
 </blockquote>
-]]></content>
-      <categories>
-        <category>programmer</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">categories:</span><br><span class="line">- programmer</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-
-<span id="more"></span>
-
-
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [programmer]</span><br><span class="line">- [Front-End]</span><br></pre></td></tr></table></figure></li>
-</ul>
 ]]></content>
       <categories>
         <category>programmer</category>
