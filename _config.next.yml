@@ -11,7 +11,7 @@
 
 # Allow to cache content generation.
 cache:
-  enable: true
+  enable: true # 表示添加缓存功能，这样浏览器后续打开我们的网站会更快
 
 # Remove unnecessary files after hexo generate.
 minify: false
@@ -99,12 +99,12 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   # home: / || fa fa-home
-  首页: / || fa fa-home
+  home: / || fa fa-home
   # about: /about/ || fa fa-user
   # categories: /categories/ || fa fa-th
-  分类: /categories/ || fa fa-th
+  categories: /categories/ || fa fa-th
   # tags: /tags/ || fa fa-tags
-  标签: /tags/ || fa fa-tags
+  tags: /tags/ || fa fa-tags
   # archives: /archives/ || fa fa-archive
   # schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
@@ -113,7 +113,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true # 是否显示分类/标签页的数量
 
 
 # ---------------------------------------------------------------
@@ -171,13 +171,14 @@ social:
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
   #YouTube: https://youtube.com/yourname || fab fa-youtube
+  Bilibili: https://space.bilibili.com/276875895 || fab fa-bilibili
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   Instagram: https://instagram.com/loganjinrgys || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
 
 social_icons:
-  enable: true
-  icons_only: true
+  enable: true # 是否显示社交图标
+  icons_only: false # 是否仅显示社交图标
   transition: false
 
 # Blog rolls
@@ -214,16 +215,16 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  since: 2022
+  since: 2022 # 建站时间
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: true
+    animated: true # 图标是否闪动
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#ff0000" # 图标颜色
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
@@ -233,7 +234,7 @@ footer:
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
-    enable: false
+    enable: false # 是否显示网站备案信息
     icp:
     # The digit in the num of gongan beian.
     gongan_id:
@@ -267,7 +268,7 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
-  separated_meta: true
+  separated_meta: true # 分隔符|
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post

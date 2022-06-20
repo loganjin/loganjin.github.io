@@ -27,7 +27,9 @@ The _config.yml file under the theme directory has the lowest priority.
 > subtitle: '知命不惧，日日自新'  
 > description: '嘿，开心一点嘛'  
 > author: Logan Jin  
-> language: zh-CN   
+> language: en  
+> timezone: 'Asia/Shanghai'  
+> highlight->auto_detect 
 > theme: next  
 
 
@@ -35,10 +37,10 @@ The _config.yml file under the theme directory has the lowest priority.
 > scheme: Gemini  
 > darkmode: true  
 > favicon: 建军  
-> menu: 首页、分类、标签    
+> menu: home、categories、tags     
+> menu_settings: badges  
 > avatar: me  
-> social: Github、E-Mail  
-> social_icons: icon_only  
+> social: Github、E-Mail、Bilibili、Instagram     
 > footer: 
 > 
 > > since  
