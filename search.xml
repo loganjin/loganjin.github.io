@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo博客框架NexT主题美化</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
+<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
+<p>In order to resolve this issue, we recommend using the <a href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
+<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
+<span id="more"></span>
+
+
+<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
+<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: zh-CN<br>timezone: ‘Asia/Shanghai’<br>theme: next  </p>
+</blockquote>
+<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
+<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: 首页、分类、标签<br>menu_settings: badges<br>avatar: me<br>social: Github、E-Mail<br>social_icons: icon_only<br>footer: </p>
+<blockquote>
+<p>since<br>icon-&gt;animated  </p>
+</blockquote>
+<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>programmer</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架Front-matter语法</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
@@ -137,34 +165,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客框架NexT主题美化</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
-<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
-<p>In order to resolve this issue, we recommend using the <a href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
-<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
-<span id="more"></span>
-
-
-<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
-<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: zh-CN<br>theme: next  </p>
-</blockquote>
-<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
-<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: 首页、分类、标签<br>avatar: me<br>social: Github、E-Mail<br>social_icons: icon_only<br>footer: </p>
-<blockquote>
-<p>since<br>icon-&gt;animated  </p>
-</blockquote>
-<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>programmer</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>个人博客搭建</title>
     <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
@@ -207,6 +207,34 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight plaint
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>土松记</title>
+    <url>/2022/06/20/%E5%9C%9F%E6%9D%BE%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="寻犬"><a href="#寻犬" class="headerlink" title="寻犬"></a>寻犬</h2><ul>
+<li>鼻子湿润：健康</li>
+<li>呼吸平稳：健康</li>
+</ul>
+<span id="more"></span>
+
+
+<h2 id="伴侣犬"><a href="#伴侣犬" class="headerlink" title="伴侣犬"></a>伴侣犬</h2><ul>
+<li>感受到小狗微笑，嘴型后拉</li>
+</ul>
+<h2 id="保镖犬"><a href="#保镖犬" class="headerlink" title="保镖犬"></a>保镖犬</h2><ul>
+<li>一伸手就用鼻子闻你</li>
+<li>叫他就摇尾巴</li>
+<li>耳朵塌下去</li>
+<li>四肢粗壮</li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://space.bilibili.com/2136759778">冷风寻犬</a></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>修勾</tag>
       </tags>
   </entry>
   <entry>
