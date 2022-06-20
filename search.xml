@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">categories:</span><br><span class="line">- programmer</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [programmer]</span><br><span class="line">- [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>programmer</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人博客搭建</title>
+    <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
+<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
+<p>动态博客</p>
+<blockquote>
+<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>静态博客  </p>
+<blockquote>
+<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
+</blockquote>
+</blockquote>
+<span id="more"></span>
+
+
+<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装Hexo</span><br><span class="line">npm i hexo-cli -g</span><br><span class="line"></span><br><span class="line"># 初始化博客</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 在_config.yml中修改参数</span><br><span class="line">type: git</span><br><span class="line">repository: git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line">branch: main</span><br><span class="line"></span><br><span class="line"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"># 生成静态文件</span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"># 一键部署</span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"># 文件生成后立即部署网站</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
+<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
+<blockquote>
+<p>_config.yml: 主题配置文件  </p>
+</blockquote>
+<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
+</blockquote>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>前期配置好nodejs、git。</li>
+<li>所有命令在目标文件夹的git bash中执行。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% extends &#x27;_layout.swig&#x27; %&#125; &#123;% import &#x27;_macro/post.swig&#x27; as post_template %&#125; &#123;% import &#x27;_macro/sidebar.swig&#x27; as sidebar_template %&#125; &#123;% block title %&#125;&#123;&#123; config.title &#125;&#125;&#123;% if theme.index_with_subtitle and config.subtitle %&#125; - &#123;&#123;config.subtitle &#125;&#125;&#123;% endif %&#125;&#123;% endblock %&#125; &#123;% block page_class %&#125; &#123;% if is_home() %&#125;page-home&#123;% endif -%&#125; &#123;% endblock %&#125; &#123;% block content %&#125;&#123;% for post in page.posts %&#125; &#123;&#123; post_template.render(post, true) &#125;&#125; &#123;% endfor %&#125;&#123;% include &#x27;_partials/pagination.swig&#x27; %&#125; &#123;% endblock %&#125; &#123;% block sidebar %&#125; &#123;&#123; sidebar_template.render(false) &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+install <code>hexo-renderer-swig</code> manually:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>programmer</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架NexT主题美化</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
@@ -20,30 +89,6 @@
 </blockquote>
 <p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
 </blockquote>
-]]></content>
-      <categories>
-        <category>programmer</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">categories:</span><br><span class="line">- programmer</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-
-<span id="more"></span>
-
-
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [programmer]</span><br><span class="line">- [Front-End]</span><br></pre></td></tr></table></figure></li>
-</ul>
 ]]></content>
       <categories>
         <category>programmer</category>
@@ -162,51 +207,6 @@
       </categories>
       <tags>
         <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人博客搭建</title>
-    <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
-<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
-<p>动态博客</p>
-<blockquote>
-<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>静态博客  </p>
-<blockquote>
-<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
-</blockquote>
-</blockquote>
-<span id="more"></span>
-
-
-<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装Hexo</span><br><span class="line">npm i hexo-cli -g</span><br><span class="line"></span><br><span class="line"># 初始化博客</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 在_config.yml中修改参数</span><br><span class="line">type: git</span><br><span class="line">repository: git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line">branch: main</span><br><span class="line"></span><br><span class="line"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"># 生成静态文件</span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"># 一键部署</span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"># 文件生成后立即部署网站</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
-<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
-<blockquote>
-<p>_config.yml: 主题配置文件  </p>
-</blockquote>
-<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
-</blockquote>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>前期配置好nodejs、git。</li>
-<li>所有命令在目标文件夹的git bash中执行。</li>
-</ul>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% extends &#x27;_layout.swig&#x27; %&#125; &#123;% import &#x27;_macro/post.swig&#x27; as post_template %&#125; &#123;% import &#x27;_macro/sidebar.swig&#x27; as sidebar_template %&#125; &#123;% block title %&#125;&#123;&#123; config.title &#125;&#125;&#123;% if theme.index_with_subtitle and config.subtitle %&#125; - &#123;&#123;config.subtitle &#125;&#125;&#123;% endif %&#125;&#123;% endblock %&#125; &#123;% block page_class %&#125; &#123;% if is_home() %&#125;page-home&#123;% endif -%&#125; &#123;% endblock %&#125; &#123;% block content %&#125;&#123;% for post in page.posts %&#125; &#123;&#123; post_template.render(post, true) &#125;&#125; &#123;% endfor %&#125;&#123;% include &#x27;_partials/pagination.swig&#x27; %&#125; &#123;% endblock %&#125; &#123;% block sidebar %&#125; &#123;&#123; sidebar_template.render(false) &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
-install <code>hexo-renderer-swig</code> manually:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>programmer</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
