@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VSCode配置</title>
+    <url>/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>对VSCode配置进行总结。</p>
+<span id="more"></span>
+
+
+<h2 id="VSCode快捷键"><a href="#VSCode快捷键" class="headerlink" title="VSCode快捷键"></a>VSCode快捷键</h2><ul>
+<li>跳到下一行：Ctrl + Enter</li>
+<li>单行注释：Ctrl + /</li>
+<li>多行注释：Ctrl + Shift + /<blockquote>
+<p>VSCode默认为Shift + Alt + A，需要手动修改</p>
+</blockquote>
+</li>
+<li>添加多个光标：Ctrl + Alt + 上下箭头</li>
+</ul>
+<h2 id="VSCode插件"><a href="#VSCode插件" class="headerlink" title="VSCode插件"></a>VSCode插件</h2><h3 id="VSCode基础插件"><a href="#VSCode基础插件" class="headerlink" title="VSCode基础插件"></a>VSCode基础插件</h3><table>
+<thead>
+<tr>
+<th>插件名称</th>
+<th>插件作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>One Dark Pro</td>
+<td>暗黑主题，选择One Dark Pro Darker</td>
+</tr>
+<tr>
+<td>vscode-icons</td>
+<td>替换成好认的图标</td>
+</tr>
+<tr>
+<td>indent-rainbow</td>
+<td>s使得缩进更好认（交替四种颜色，错了变红）</td>
+</tr>
+<tr>
+<td>Indenticator</td>
+<td>Highlights your current indent depth</td>
+</tr>
+<tr>
+<td>Code Spell Checker</td>
+<td>Spelling checker for source code</td>
+</tr>
+<tr>
+<td>Project Manager</td>
+<td>Easily switch between projects</td>
+</tr>
+<tr>
+<td>Markdown All in One</td>
+<td>All you need to write Markdown</td>
+</tr>
+<tr>
+<td>Bookmarks</td>
+<td>Mark lines and jump to them</td>
+</tr>
+<tr>
+<td>GitLens — Git supercharged</td>
+<td>相比于VSCode内置Git，增加了branches、remotes、stashes、tags、contributors</td>
+</tr>
+<tr>
+<td>Git Graph</td>
+<td>图形化显示提交历史</td>
+</tr>
+</tbody></table>
+<h3 id="VSCode前端插件"><a href="#VSCode前端插件" class="headerlink" title="VSCode前端插件"></a>VSCode前端插件</h3><table>
+<thead>
+<tr>
+<th>插件名称</th>
+<th>插件作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Live Server</td>
+<td>Launch a development local Server with live reload feature for static &amp; dynamic pages</td>
+</tr>
+<tr>
+<td>Image preview</td>
+<td>光标悬浮在图片路径上时，显示图片预览</td>
+</tr>
+<tr>
+<td>Auto Rename Tag</td>
+<td>Auto rename paired HTML/XML tag</td>
+</tr>
+<tr>
+<td>Auto Close Tag</td>
+<td>Automatically add HTML/XML close tag</td>
+</tr>
+<tr>
+<td>CSS Peek</td>
+<td>Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition</td>
+</tr>
+<tr>
+<td>Vetur</td>
+<td>Syntax highlighting</td>
+</tr>
+<tr>
+<td>Vue 3 Snippets</td>
+<td>A Vue.js 3 And Vue.js 2 Code Snippets Extension</td>
+</tr>
+<tr>
+<td>ESLint</td>
+<td>代码质量校验工具</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架Front-matter语法</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
@@ -119,118 +231,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VSCode配置</title>
-    <url>/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>对VSCode配置进行总结。</p>
-<span id="more"></span>
-
-
-<h2 id="VSCode快捷键"><a href="#VSCode快捷键" class="headerlink" title="VSCode快捷键"></a>VSCode快捷键</h2><ul>
-<li>跳到下一行：Ctrl + Enter</li>
-<li>单行注释：Ctrl + /</li>
-<li>多行注释：Ctrl + Shift + /<blockquote>
-<p>VSCode默认为Shift + Alt + A，需要手动修改</p>
-</blockquote>
-</li>
-<li>添加多个光标：Ctrl + Alt + 上下箭头</li>
-</ul>
-<h2 id="VSCode插件"><a href="#VSCode插件" class="headerlink" title="VSCode插件"></a>VSCode插件</h2><h3 id="VSCode基础插件"><a href="#VSCode基础插件" class="headerlink" title="VSCode基础插件"></a>VSCode基础插件</h3><table>
-<thead>
-<tr>
-<th>插件名称</th>
-<th>插件作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>One Dark Pro</td>
-<td>暗黑主题，选择One Dark Pro Darker</td>
-</tr>
-<tr>
-<td>vscode-icons</td>
-<td>替换成好认的图标</td>
-</tr>
-<tr>
-<td>indent-rainbow</td>
-<td>s使得缩进更好认（交替四种颜色，错了变红）</td>
-</tr>
-<tr>
-<td>Indenticator</td>
-<td>Highlights your current indent depth</td>
-</tr>
-<tr>
-<td>Code Spell Checker</td>
-<td>Spelling checker for source code</td>
-</tr>
-<tr>
-<td>Project Manager</td>
-<td>Easily switch between projects</td>
-</tr>
-<tr>
-<td>Markdown All in One</td>
-<td>All you need to write Markdown</td>
-</tr>
-<tr>
-<td>Bookmarks</td>
-<td>Mark lines and jump to them</td>
-</tr>
-<tr>
-<td>GitLens — Git supercharged</td>
-<td>相比于VSCode内置Git，增加了branches、remotes、stashes、tags、contributors</td>
-</tr>
-<tr>
-<td>Git Graph</td>
-<td>图形化显示提交历史</td>
-</tr>
-</tbody></table>
-<h3 id="VSCode前端插件"><a href="#VSCode前端插件" class="headerlink" title="VSCode前端插件"></a>VSCode前端插件</h3><table>
-<thead>
-<tr>
-<th>插件名称</th>
-<th>插件作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Live Server</td>
-<td>Launch a development local Server with live reload feature for static &amp; dynamic pages</td>
-</tr>
-<tr>
-<td>Image preview</td>
-<td>光标悬浮在图片路径上时，显示图片预览</td>
-</tr>
-<tr>
-<td>Auto Rename Tag</td>
-<td>Auto rename paired HTML/XML tag</td>
-</tr>
-<tr>
-<td>Auto Close Tag</td>
-<td>Automatically add HTML/XML close tag</td>
-</tr>
-<tr>
-<td>CSS Peek</td>
-<td>Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition</td>
-</tr>
-<tr>
-<td>Vetur</td>
-<td>Syntax highlighting</td>
-</tr>
-<tr>
-<td>Vue 3 Snippets</td>
-<td>A Vue.js 3 And Vue.js 2 Code Snippets Extension</td>
-</tr>
-<tr>
-<td>ESLint</td>
-<td>代码质量校验工具</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>href、src的区别</title>
     <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<ul>
@@ -293,6 +293,25 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
+    <title>基于Hexo博客框架的多设备博客管理</title>
+    <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
+<span id="more"></span>
+
+
+<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建本地blog文件夹，同步到GitHub。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span></span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以<span class="built_in">clone</span>时只<span class="built_in">clone</span>了hexo分支，<span class="built_in">clone</span>这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line"><span class="comment">#将.git文件夹复制到本地blog文件夹。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git <span class="built_in">clone</span>主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span></span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的<span class="string">.git</span>文件夹会覆盖我们需要的<span class="string">.git</span>文件夹。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改_config.yml中的deploy参数为main。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件<span class="params">(hexo操作)</span>，hexo分支管理博客文件<span class="params">(git操作)</span>。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>土松记</title>
     <url>/2022/06/20/%E5%9C%9F%E6%9D%BE%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="寻犬"><a href="#寻犬" class="headerlink" title="寻犬"></a>寻犬</h2><ul>
@@ -321,27 +340,8 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>基于Hexo博客框架的多设备博客管理</title>
-    <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
-<span id="more"></span>
-
-
-<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建本地blog文件夹，同步到GitHub。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span></span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以<span class="built_in">clone</span>时只<span class="built_in">clone</span>了hexo分支，<span class="built_in">clone</span>这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line"><span class="comment">#将.git文件夹复制到本地blog文件夹。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git <span class="built_in">clone</span>主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span></span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的<span class="string">.git</span>文件夹会覆盖我们需要的<span class="string">.git</span>文件夹。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改_config.yml中的deploy参数为main。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件<span class="params">(hexo操作)</span>，hexo分支管理博客文件<span class="params">(git操作)</span>。</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对HTML5语义化的理解</title>
-    <url>/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3-md/</url>
+    <url>/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<p>(HTML5)</p>
 <span id="more"></span>
 
@@ -353,7 +353,7 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
 <li>语义化的优点：<br>1：对机器友好,有利于SEO；有利于机器爬虫，它能够更加直接地爬取到想要的内容。<br>2：对开发者友好，使用语义化标签减少了类名的使用，让结构更加清晰，增强可读性，便于开发和维护。</li>
 </ul>
 <ul>
-<li>常见的语义化标签：<br>header：头部标签<br>nav：导航标签<br>article：内容标签<br>section：块级标签<br>aside：侧边栏标签<br>footer：尾部标签  <img src="/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3-md/%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.png" class=""></li>
+<li>常见的语义化标签：<br>header：头部标签<br>nav：导航标签<br>article：内容标签<br>section：块级标签<br>aside：侧边栏标签<br>footer：尾部标签     <img src="/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.png" class=""></li>
 </ul>
 ]]></content>
       <categories>
