@@ -27,5 +27,5 @@ nav：导航标签
 article：内容标签  
 section：块级标签  
 aside：侧边栏标签  
-footer：尾部标签  
+footer：尾部标签     
 {% asset_img 常见的语义化标签.png %}
