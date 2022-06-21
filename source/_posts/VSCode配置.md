@@ -4,9 +4,10 @@ date: 2022/6/20
 tags:
 - VSCode
 categories:
-- programmer
+- 程序员的自我修养
 ---
 对VSCode配置进行总结。
+
 
 <!--more-->
 

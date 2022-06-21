@@ -4,7 +4,7 @@ date: 2022/6/18
 tags:
 - Hexo
 categories:
-- programmer
+- 程序员的自我修养
 ---
 
 
