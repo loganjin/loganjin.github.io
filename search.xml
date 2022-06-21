@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
-<span id="more"></span>
-
-
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>programmer</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客框架NexT主题美化</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
@@ -46,26 +22,31 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>programmer</category>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
-    <title>基于Hexo博客框架的多设备博客管理</title>
-    <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
 <span id="more"></span>
 
 
-<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建本地blog文件夹，同步到GitHub。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span></span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以<span class="built_in">clone</span>时只<span class="built_in">clone</span>了hexo分支，<span class="built_in">clone</span>这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line"><span class="comment">#将.git文件夹复制到本地blog文件夹。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git <span class="built_in">clone</span>主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span></span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的<span class="string">.git</span>文件夹会覆盖我们需要的<span class="string">.git</span>文件夹。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改_config.yml中的deploy参数为main。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件<span class="params">(hexo操作)</span>，hexo分支管理博客文件<span class="params">(git操作)</span>。</span><br></pre></td></tr></table></figure>
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
-        <category>programmer</category>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -177,10 +158,30 @@
 </tbody></table>
 ]]></content>
       <categories>
-        <category>programmer</category>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
         <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>href、src的区别</title>
+    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<span id="more"></span>
+
+
+<ul>
+<li>href<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
+</ul>
+<ul>
+<li>src<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>HTML面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -222,7 +223,26 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
 </ul>
 ]]></content>
       <categories>
-        <category>programmer</category>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于Hexo博客框架的多设备博客管理</title>
+    <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
+<span id="more"></span>
+
+
+<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建本地blog文件夹，同步到GitHub。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span></span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以<span class="built_in">clone</span>时只<span class="built_in">clone</span>了hexo分支，<span class="built_in">clone</span>这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line"><span class="comment">#将.git文件夹复制到本地blog文件夹。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git <span class="built_in">clone</span>主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span></span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的<span class="string">.git</span>文件夹会覆盖我们需要的<span class="string">.git</span>文件夹。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改_config.yml中的deploy参数为main。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件<span class="params">(hexo操作)</span>，hexo分支管理博客文件<span class="params">(git操作)</span>。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
