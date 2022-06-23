@@ -1,6 +1,6 @@
 ---
 title: Hexo博客正文图片不显示解决方法
-date: 2022/6/21
+date: 2022-06-21
 tags:
 - Hexo
 categories:

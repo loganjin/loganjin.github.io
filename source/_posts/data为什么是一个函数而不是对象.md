@@ -1,6 +1,6 @@
 ---
 title: data为什么是一个函数而不是对象
-date: 2022/6/23
+date: 2022-06-23
 tags:
 - Vue面试题
 categories:

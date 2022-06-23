@@ -1,6 +1,6 @@
 ---
 title: 对比v-if和v-show
-date: 2022/6/23
+date: 2022-06-23
 tags:
 - Vue面试题
 categories:

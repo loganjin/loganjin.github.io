@@ -1,6 +1,6 @@
 ---
 title: Hexo博客框架Front-matter语法
-date: 2022/6/18
+date: 2022-06-18
 tags:
 - Hexo
 categories:

@@ -1,6 +1,6 @@
 ---
 title: VSCode配置
-date: 2022/6/20
+date: 2022-06-20
 tags:
 - VSCode
 categories:

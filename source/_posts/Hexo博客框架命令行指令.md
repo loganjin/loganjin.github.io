@@ -1,6 +1,6 @@
 ---
 title: Hexo博客框架命令行指令
-date: 2022/6/21
+date: 2022-06-21
 tags:
 - Hexo
 categories:
