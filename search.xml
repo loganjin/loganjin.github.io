@@ -53,6 +53,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客正文图片不显示解决方法</title>
+    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%AD%A3%E6%96%87%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>将图片放在<code>source/images</code>文件夹中，通过类似于<code>![](/images/image.jpg)</code>的Markdown语法来访问它们，发现图片在博客正文不显示。<br>注：<br>Hexo version: 5.4.2<br>NexT version: 8.12.1</p>
+<span id="more"></span>
+
+
+<p>解决方法：<br>将_config.yml中的<code>post_asset_folder</code>设置为true，通过命令行新建文章，将图片放在伴随命令行指令产生的文件夹中，在通过如<code>&#123;% asset_img example.jpg This is an example image %&#125;</code>的标签插件来引入图片即可。</p>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架命令行指令</title>
     <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<ul>
@@ -94,22 +110,6 @@
 <li><p>文件生成后立即部署网站<br>hexo g -d</p>
 </li>
 </ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客正文图片不显示解决方法</title>
-    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%AD%A3%E6%96%87%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>将图片放在<code>source/images</code>文件夹中，通过类似于<code>![](/images/image.jpg)</code>的Markdown语法来访问它们，发现图片在博客正文不显示。<br>注：<br>Hexo version: 5.4.2<br>NexT version: 8.12.1</p>
-<span id="more"></span>
-
-
-<p>解决方法：<br>将_config.yml中的<code>post_asset_folder</code>设置为true，通过命令行新建文章，将图片放在伴随命令行指令产生的文件夹中，在通过如<code>&#123;% asset_img example.jpg This is an example image %&#125;</code>的标签插件来引入图片即可。</p>
 ]]></content>
       <categories>
         <category>程序员的自我修养</category>
@@ -408,6 +408,27 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
+    <title>对比methods和computed</title>
+    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>相同点：<br>methods和computed最终结果相同。</li>
+</ul>
+<ul>
+<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对Vue组件化的理解</title>
     <url>/2022/06/23/%E5%AF%B9Vue%E7%BB%84%E4%BB%B6%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<p>（基础知识）</p>
@@ -449,27 +470,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
 </ol>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对比methods和computed</title>
-    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>相同点：<br>methods和computed最终结果相同。</li>
-</ul>
-<ul>
-<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
-</ul>
 ]]></content>
       <categories>
         <category>面试题</category>
