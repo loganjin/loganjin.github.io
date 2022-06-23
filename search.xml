@@ -1,56 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客框架命令行指令</title>
-    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<ul>
-<li>创建新文章<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
-拓：  <table>
-<thead>
-<tr>
-<th>布局（layout）</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>source/_posts</td>
-</tr>
-<tr>
-<td>page</td>
-<td>source</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>source/_drafts</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<span id="more"></span>
-
-
-<ul>
-<li><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo clean</p>
-</li>
-<li><p>生成静态文件<br>hexo g（即hexo generate）</p>
-</li>
-<li><p>启动服务器：默认情况下，访问网址为：<a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a><br>hexo s（即hexo server）</p>
-</li>
-<li><p>一键部署<br>npm i hexo-deployer-git –save<br>hexo d（即hexo deploy）</p>
-</li>
-<li><p>文件生成后立即部署网站<br>hexo g -d</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客框架Front-matter语法</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
@@ -103,20 +53,53 @@
       </tags>
   </entry>
   <entry>
-    <title>href、src的区别</title>
-    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <title>Hexo博客框架命令行指令</title>
+    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<ul>
-<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
+<li>创建新文章<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
+拓：  <table>
+<thead>
+<tr>
+<th>布局（layout）</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>source/_posts</td>
+</tr>
+<tr>
+<td>page</td>
+<td>source</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>source/_drafts</td>
+</tr>
+</tbody></table>
+</li>
 </ul>
+<span id="more"></span>
+
+
 <ul>
-<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
+<li><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo clean</p>
+</li>
+<li><p>生成静态文件<br>hexo g（即hexo generate）</p>
+</li>
+<li><p>启动服务器：默认情况下，访问网址为：<a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a><br>hexo s（即hexo server）</p>
+</li>
+<li><p>一键部署<br>npm i hexo-deployer-git –save<br>hexo d（即hexo deploy）</p>
+</li>
+<li><p>文件生成后立即部署网站<br>hexo g -d</p>
+</li>
 </ul>
 ]]></content>
       <categories>
-        <category>面试题</category>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
-        <tag>HTML面试题</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -248,6 +231,56 @@
       </tags>
   </entry>
   <entry>
+    <title>data为什么是一个函数而不是对象</title>
+    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>href、src的区别</title>
+    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<ul>
+<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
+</ul>
+<ul>
+<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>HTML面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>v-model的实现原理</title>
+    <url>/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<p>v-model可以实现数据的双向绑定，原因在于：  </p>
+<img src="/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.png" class="">
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>个人博客搭建</title>
     <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
@@ -351,27 +384,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>对比methods和computed</title>
-    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>相同点：<br>methods和computed最终结果相同。</li>
-</ul>
-<ul>
-<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对HTML5语义化的理解</title>
     <url>/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<p>(HTML5)</p>
@@ -421,6 +433,27 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
 </ol>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对比methods和computed</title>
+    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>相同点：<br>methods和computed最终结果相同。</li>
+</ul>
+<ul>
+<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
+</ul>
 ]]></content>
       <categories>
         <category>面试题</category>

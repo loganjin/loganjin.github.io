@@ -21,25 +21,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="嘿，开心一点嘛">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LIFE×WORK">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+    <meta name="description" content="（基础知识）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="v-model的实现原理">
+<meta property="og:url" content="http://example.com/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="LIFE×WORK">
-<meta property="og:description" content="嘿，开心一点嘛">
+<meta property="og:description" content="（基础知识）">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.png">
+<meta property="article:published_time" content="2022-06-23T11:59:52.000Z">
+<meta property="article:modified_time" content="2022-06-23T12:04:51.971Z">
 <meta property="article:author" content="Logan Jin">
+<meta property="article:tag" content="Vue面试题">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.png">
 
 
-<link rel="canonical" href="http://example.com/archives/2022/">
+<link rel="canonical" href="http://example.com/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/2022/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/","path":"2022/06/23/v-model的实现原理/","title":"v-model的实现原理"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | LIFE×WORK</title>
+<title>v-model的实现原理 | LIFE×WORK</title>
   
 
 
@@ -69,7 +74,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">LIFE×WORK</h1>
+      <p class="site-title">LIFE×WORK</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">知命不惧，日日自新</p>
@@ -209,232 +214,106 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 15 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Logan Jin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIFE×WORK">
+      <meta itemprop="description" content="嘿，开心一点嘛">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="v-model的实现原理 | LIFE×WORK">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          v-model的实现原理
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="Created: 2022-06-23 19:59:52 / Modified: 20:04:51" itemprop="dateCreated datePublished" datetime="2022-06-23T19:59:52+08:00">2022-06-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>（基础知识）</p>
+<span id="more"></span>
+
+
+<p>v-model可以实现数据的双向绑定，原因在于：  </p>
+<img src="/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.png" class="">
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-23T19:59:52+08:00"
-              content="2022-06-23">
-          06-23
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
-            <span itemprop="name">v-model的实现原理</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Vue%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> Vue面试题</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/" rel="prev" title="data为什么是一个函数而不是对象">
+                  <i class="fa fa-chevron-left"></i> data为什么是一个函数而不是对象
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-23T00:00:00+08:00"
-              content="2022-06-23">
-          06-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/" itemprop="url">
-            <span itemprop="name">data为什么是一个函数而不是对象</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-23T00:00:00+08:00"
-              content="2022-06-23">
-          06-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/23/%E5%AF%B9%E6%AF%94v-if%E5%92%8Cv-show/" itemprop="url">
-            <span itemprop="name">对比v-if和v-show</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-23T00:00:00+08:00"
-              content="2022-06-23">
-          06-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/" itemprop="url">
-            <span itemprop="name">对比methods和computed</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-22T18:59:08+08:00"
-              content="2022-06-22">
-          06-22
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/22/%E9%BA%BB%E5%A9%86%E8%B1%86%E8%85%90/" itemprop="url">
-            <span itemprop="name">麻婆豆腐</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-21T00:00:00+08:00"
-              content="2022-06-21">
-          06-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">Hexo博客框架命令行指令</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-21T00:00:00+08:00"
-              content="2022-06-21">
-          06-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%AD%A3%E6%96%87%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" itemprop="url">
-            <span itemprop="name">Hexo博客正文图片不显示解决方法</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-21T00:00:00+08:00"
-              content="2022-06-21">
-          06-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/" itemprop="url">
-            <span itemprop="name">href、src的区别</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-21T00:00:00+08:00"
-              content="2022-06-21">
-          06-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/" itemprop="url">
-            <span itemprop="name">对HTML5语义化的理解</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-20T00:00:00+08:00"
-              content="2022-06-20">
-          06-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/" itemprop="url">
-            <span itemprop="name">VSCode配置</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2022/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
+
+
+
 
 </div>
   </main>
