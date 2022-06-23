@@ -51,6 +51,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架NexT主题美化</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
@@ -76,6 +100,23 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>href、src的区别</title>
+    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<ul>
+<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
+</ul>
+<ul>
+<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>HTML面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -207,37 +248,41 @@
       </tags>
   </entry>
   <entry>
-    <title>href、src的区别</title>
-    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<ul>
-<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
-</ul>
-<ul>
-<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>HTML面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
+    <title>个人博客搭建</title>
+    <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
+<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
+<p>动态博客</p>
+<blockquote>
+<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>静态博客  </p>
+<blockquote>
+<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
+</blockquote>
+</blockquote>
 <span id="more"></span>
 
 
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
+<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 安装Hexo</span></span><br><span class="line">npm i hexo-<span class="keyword">cli</span> -g</span><br><span class="line"></span><br><span class="line"><span class="meta"># 初始化博客</span></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"><span class="meta"># 在_config.yml中修改参数</span></span><br><span class="line"><span class="symbol">type:</span> git</span><br><span class="line"><span class="symbol">repository:</span> git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line"><span class="symbol">branch:</span> main</span><br><span class="line"></span><br><span class="line"><span class="meta"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="meta"># 生成静态文件</span></span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span></span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 一键部署</span></span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 文件生成后立即部署网站</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
+<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
+<blockquote>
+<p>_config.yml: 主题配置文件  </p>
 </blockquote>
+<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
+</blockquote>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>前期配置好nodejs、git。</li>
+<li>所有命令在目标文件夹的git bash中执行。</li>
+</ul>
 <h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name"><span class="name">extends</span></span> &#x27;_layout.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/post.swig&#x27; <span class="keyword">as</span> post_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/sidebar.swig&#x27; <span class="keyword">as</span> sidebar_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.index_with_subtitle and config.subtitle %&#125;</span><span class="language-xml"> - </span><span class="template-variable">&#123;&#123;config.subtitle &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> page_class %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> is_home() %&#125;</span><span class="language-xml">page-home</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> -%&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> content %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> post <span class="keyword">in</span> page.posts %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> &#x27;_partials/pagination.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> sidebar %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; sidebar_template.render(false) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span></span><br></pre></td></tr></table></figure>
+install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
 </ul>
 ]]></content>
       <categories>
@@ -287,51 +332,6 @@
       </tags>
   </entry>
   <entry>
-    <title>个人博客搭建</title>
-    <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
-<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
-<p>动态博客</p>
-<blockquote>
-<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>静态博客  </p>
-<blockquote>
-<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
-</blockquote>
-</blockquote>
-<span id="more"></span>
-
-
-<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 安装Hexo</span></span><br><span class="line">npm i hexo-<span class="keyword">cli</span> -g</span><br><span class="line"></span><br><span class="line"><span class="meta"># 初始化博客</span></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"><span class="meta"># 在_config.yml中修改参数</span></span><br><span class="line"><span class="symbol">type:</span> git</span><br><span class="line"><span class="symbol">repository:</span> git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line"><span class="symbol">branch:</span> main</span><br><span class="line"></span><br><span class="line"><span class="meta"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="meta"># 生成静态文件</span></span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span></span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 一键部署</span></span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 文件生成后立即部署网站</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
-<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
-<blockquote>
-<p>_config.yml: 主题配置文件  </p>
-</blockquote>
-<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
-</blockquote>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>前期配置好nodejs、git。</li>
-<li>所有命令在目标文件夹的git bash中执行。</li>
-</ul>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name"><span class="name">extends</span></span> &#x27;_layout.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/post.swig&#x27; <span class="keyword">as</span> post_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/sidebar.swig&#x27; <span class="keyword">as</span> sidebar_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.index_with_subtitle and config.subtitle %&#125;</span><span class="language-xml"> - </span><span class="template-variable">&#123;&#123;config.subtitle &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> page_class %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> is_home() %&#125;</span><span class="language-xml">page-home</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> -%&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> content %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> post <span class="keyword">in</span> page.posts %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> &#x27;_partials/pagination.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> sidebar %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; sidebar_template.render(false) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span></span><br></pre></td></tr></table></figure>
-install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于Hexo博客框架的多设备博客管理</title>
     <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
@@ -348,6 +348,27 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对比methods和computed</title>
+    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>相同点：<br>methods和computed最终结果相同。</li>
+</ul>
+<ul>
+<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -375,24 +396,37 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>对比methods和computed</title>
-    <url>/2022/06/21/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
+    <title>对比v-if和v-show</title>
+    <url>/2022/06/23/%E5%AF%B9%E6%AF%94v-if%E5%92%8Cv-show/</url>
     <content><![CDATA[<p>（基础知识）</p>
 <span id="more"></span>
 
 
-<ul>
-<li>相同点：<br>methods和computed最终结果相同。</li>
-</ul>
-<ul>
-<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
-</ul>
+<ol>
+<li>相同点：<br>在vue中v-if(不含v-else)和v-show的作用效果是相同的，都能控制元素在页面是否显示：当表达式为true的时候，都会占据页面的位置；当表达式为false的时候，都不会占据页面位置。</li>
+</ol>
+<ol start="2">
+<li><p>不同点：  </p>
+<ol>
+<li><p>控制手段：v-if显示隐藏是动态的向DOM树内添加或删除DOM元素；v-show隐藏则是为该元素添加<code>display:none</code>，DOM元素依旧还在。</p>
+</li>
+<li><p>编译过程：v-if切换有一个局部编译/卸载的过程，切换过程中合适地销毁和重建内部的事件监听和子组件；v-show只是简单的基于CSS切换。</p>
+</li>
+<li><p>编译条件：v-if是真正的条件渲染，它会确保在切换过程中条件块内的事件监听器和子组件合适地被销毁和重建：只有渲染条件为假时，并不做操作，直到为真才渲染； v-show是在任何条件下，无论首次条件是否为真，都被编译，然后被缓存，而且保留DOM元素。</p>
+</li>
+<li><p>性能消耗：v-if有更高的切换消耗，v-show有更高的初始渲染消耗。</p>
+</li>
+<li><p>使用场景：v-if由于直接操作DOM节点增加或删除，所以相比v-show开销更大。如果在运行时条件很少改变，则使用 v-if 较好；如果需要非常频繁地切换，则使用 v-show 较好。</p>
+</li>
+</ol>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>面试题</category>
       </categories>
       <tags>
-        <tag>HTML面试题</tag>
+        <tag>Vue面试题</tag>
       </tags>
   </entry>
   <entry>
