@@ -1,8 +1,8 @@
 ---
 title: 对比methods和computed
-date: 2022/6/21
+date: 2022/6/23
 tags:
-- HTML面试题
+- Vue面试题
 categories:
 - 面试题
 ---
