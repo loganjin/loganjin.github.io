@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
-<span id="more"></span>
-
-
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客框架NexT主题美化</title>
     <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
@@ -44,6 +20,30 @@
 </blockquote>
 <p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
         <category>程序员的自我修养</category>
@@ -231,22 +231,6 @@
       </tags>
   </entry>
   <entry>
-    <title>data为什么是一个函数而不是对象</title>
-    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>href、src的区别</title>
     <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<ul>
@@ -261,6 +245,22 @@
       </categories>
       <tags>
         <tag>HTML面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>data为什么是一个函数而不是对象</title>
+    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -350,9 +350,10 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
     <title>代码输出结果0</title>
     <url>/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/</url>
     <content><![CDATA[<p>（代码输出结果）</p>
-<span id="more"></span>
+<img src="/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0.png" class="">
 
 
+<span id="more"></span>~
 
 
 <p>JS的数组实际上为对象，对于<code>arr[0]=1;</code>而言，0实际上为属性的名字，而JS属性的名字只能是字符串，所以JS会自动把<code>0</code>转换为<code>&#39;0&#39;</code>，即arr[0]等价于arr[‘0’]。</p>
@@ -463,27 +464,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>对比methods和computed</title>
-    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>相同点：<br>methods和computed最终结果相同。</li>
-</ul>
-<ul>
-<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对比v-if和v-show</title>
     <url>/2022/06/23/%E5%AF%B9%E6%AF%94v-if%E5%92%8Cv-show/</url>
     <content><![CDATA[<p>（基础知识）</p>
@@ -509,6 +489,27 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
 </ol>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对比methods和computed</title>
+    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>相同点：<br>methods和computed最终结果相同。</li>
+</ul>
+<ul>
+<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
+</ul>
 ]]></content>
       <categories>
         <category>面试题</category>
