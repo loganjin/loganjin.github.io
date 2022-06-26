@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2022/06/26/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
-    <content><![CDATA[]]></content>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客框架NexT主题美化</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
+<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
+<p>In order to resolve this issue, we recommend using the <a href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
+<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
+<span id="more"></span>
+
+
+<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
+<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: en<br>timezone: ‘Asia/Shanghai’<br>highlight-&gt;auto_detect<br>theme: next  </p>
+</blockquote>
+<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
+<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: home、categories、tags<br>menu_settings: badges<br>avatar: me<br>social: Github、E-Mail、Bilibili、Instagram<br>footer: </p>
+<blockquote>
+<p>since<br>icon-&gt;animated  </p>
+</blockquote>
+<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hexo博客正文图片不显示解决方法</title>
@@ -63,58 +110,6 @@
 <li><p>文件生成后立即部署网站<br>hexo g -d</p>
 </li>
 </ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
-<span id="more"></span>
-
-
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客框架NexT主题美化</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
-<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
-<p>In order to resolve this issue, we recommend using the <a href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
-<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
-<span id="more"></span>
-
-
-<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
-<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: en<br>timezone: ‘Asia/Shanghai’<br>highlight-&gt;auto_detect<br>theme: next  </p>
-</blockquote>
-<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
-<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: home、categories、tags<br>menu_settings: badges<br>avatar: me<br>social: Github、E-Mail、Bilibili、Instagram<br>footer: </p>
-<blockquote>
-<p>since<br>icon-&gt;animated  </p>
-</blockquote>
-<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
-</blockquote>
 ]]></content>
       <categories>
         <category>程序员的自我修养</category>
@@ -236,6 +231,22 @@
       </tags>
   </entry>
   <entry>
+    <title>data为什么是一个函数而不是对象</title>
+    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>（基础知识）</p>
+<span id="more"></span>
+
+
+<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>href、src的区别</title>
     <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<ul>
@@ -253,19 +264,41 @@
       </tags>
   </entry>
   <entry>
-    <title>data为什么是一个函数而不是对象</title>
-    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
+    <title>v-model的实现原理</title>
+    <url>/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<p>（基础知识）</p>
 <span id="more"></span>
 
 
-<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
+<p>v-model可以实现数据的双向绑定，原因在于：  </p>
+<img src="/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.png" class="">
 ]]></content>
       <categories>
         <category>面试题</category>
       </categories>
       <tags>
         <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么是DOM和BOM？</title>
+    <url>/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/</url>
+    <content><![CDATA[<p>（Web APIs）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>DOM：<br>指的是文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。</li>
+</ul>
+<ul>
+<li>BOM：<br>指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的方法和接口。<br>BOM的核心是window，而window对象具有双重角色，它既是js访问浏览器窗口的一个接口，又是一个全局（Global）对象，定义在全局作用域中的变量、函数都会变成window对象的属性和方法。window对象含有location对象、navigator对象、screen对象等子对象，并且DOM的最根本的对象document对象也是window对象的子对象。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>JS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -314,18 +347,16 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>什么是DOM和BOM？</title>
-    <url>/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/</url>
-    <content><![CDATA[<p>（Web APIs）</p>
+    <title>代码输出结果0</title>
+    <url>/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/</url>
+    <content><![CDATA[<p>（代码输出结果）</p>
+<img src="/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0.png" class="">
+
+
 <span id="more"></span>
 
 
-<ul>
-<li>DOM：<br>指的是文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。</li>
-</ul>
-<ul>
-<li>BOM：<br>指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的方法和接口。<br>BOM的核心是window，而window对象具有双重角色，它既是js访问浏览器窗口的一个接口，又是一个全局（Global）对象，定义在全局作用域中的变量、函数都会变成window对象的属性和方法。window对象含有location对象、navigator对象、screen对象等子对象，并且DOM的最根本的对象document对象也是window对象的子对象。</li>
-</ul>
+<p>JS的数组实际上为对象，对于<code>arr[0]=1;</code>而言，0实际上为属性的名字，而JS属性的名字只能是字符串，所以JS会自动把<code>0</code>转换为<code>&#39;0&#39;</code>，即arr[0]等价于arr[‘0’]。</p>
 ]]></content>
       <categories>
         <category>面试题</category>
@@ -347,25 +378,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>代码输出结果0</title>
-    <url>/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/</url>
-    <content><![CDATA[<p>（代码输出结果）</p>
-<img src="/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0.png" class="">
-
-
-<span id="more"></span>
-
-
-<p>JS的数组实际上为对象，对于<code>arr[0]=1;</code>而言，0实际上为属性的名字，而JS属性的名字只能是字符串，所以JS会自动把<code>0</code>转换为<code>&#39;0&#39;</code>，即arr[0]等价于arr[‘0’]。</p>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>JS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -422,20 +434,27 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>v-model的实现原理</title>
-    <url>/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<p>（基础知识）</p>
+    <title>多行文本溢出隐藏</title>
+    <url>/2022/06/26/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
+    <content><![CDATA[<p>（开发）</p>
 <span id="more"></span>
 
 
-<p>v-model可以实现数据的双向绑定，原因在于：  </p>
-<img src="/2022/06/23/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/v-model%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.png" class="">
+<ul>
+<li>基于行数截断：<br>```<br>/* 限制在一个块级元素内显示的文本行数 */</li>
+<li>webkit-line-clamp: 2;</li>
+</ul>
+<p>/* 弹性伸缩盒子模型显示 */<br>display: -webkit-box;</p>
+<p>/* 设置弹性伸缩盒子的子元素的排列方式 */<br>-webkit-box-orient: vertical;</p>
+<p>(上面三个为CSS3内容，所以要加上-webkit-来实现浏览器兼容)</p>
+<p>/* 文本超过限定宽度时，溢出隐藏 */<br>overflow: hidden;</p>
+<p>/* 当文本溢出隐藏时，用省略号代替超出的部分 */<br>text-overflow: ellipsis;</p>
 ]]></content>
       <categories>
         <category>面试题</category>
       </categories>
       <tags>
-        <tag>Vue面试题</tag>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
