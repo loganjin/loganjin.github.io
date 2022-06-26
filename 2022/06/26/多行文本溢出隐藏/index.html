@@ -29,7 +29,7 @@
 <meta property="og:description" content="（开发）">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-26T14:21:19.286Z">
+<meta property="article:modified_time" content="2022-06-26T14:27:41.834Z">
 <meta property="article:author" content="Logan Jin">
 <meta property="article:tag" content="CSS面试题">
 <meta name="twitter:card" content="summary">
@@ -253,7 +253,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-26 00:00:00 / Modified: 22:21:19" itemprop="dateCreated datePublished" datetime="2022-06-26T00:00:00+08:00">2022-06-26</time>
+      <time title="Created: 2022-06-26 00:00:00 / Modified: 22:27:41" itemprop="dateCreated datePublished" datetime="2022-06-26T00:00:00+08:00">2022-06-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -280,14 +280,8 @@
 
 
 <ul>
-<li>基于行数截断：<br>```<br>/* 限制在一个块级元素内显示的文本行数 */</li>
-<li>webkit-line-clamp: 2;</li>
+<li>基于行数截断：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 限制在一个块级元素内显示的文本行数 */</span></span><br><span class="line">-webkit-line-clamp: <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 弹性伸缩盒子模型显示 */</span></span><br><span class="line"><span class="attribute">display</span>: -webkit-box;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置弹性伸缩盒子的子元素的排列方式 */</span></span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line"></span><br><span class="line">(上面三个为CSS3内容，所以要加上-webkit-来实现浏览器兼容)</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出隐藏时，用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p>/* 弹性伸缩盒子模型显示 */<br>display: -webkit-box;</p>
-<p>/* 设置弹性伸缩盒子的子元素的排列方式 */<br>-webkit-box-orient: vertical;</p>
-<p>(上面三个为CSS3内容，所以要加上-webkit-来实现浏览器兼容)</p>
-<p>/* 文本超过限定宽度时，溢出隐藏 */<br>overflow: hidden;</p>
-<p>/* 当文本溢出隐藏时，用省略号代替超出的部分 */<br>text-overflow: ellipsis;</p>
 
     </div>
 
