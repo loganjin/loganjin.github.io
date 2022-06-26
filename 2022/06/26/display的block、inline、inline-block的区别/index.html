@@ -21,28 +21,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="对VSCode配置进行总结。">
+    <meta name="description" content="（属性）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VSCode配置">
-<meta property="og:url" content="http://example.com/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="display的block、inline、inline-block的区别">
+<meta property="og:url" content="http://example.com/2022/06/26/display%E7%9A%84block%E3%80%81inline%E3%80%81inline-block%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="LIFE×WORK">
-<meta property="og:description" content="对VSCode配置进行总结。">
+<meta property="og:description" content="（属性）">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-23T12:26:06.812Z">
+<meta property="article:published_time" content="2022-06-26T14:49:14.000Z">
+<meta property="article:modified_time" content="2022-06-26T15:02:46.202Z">
 <meta property="article:author" content="Logan Jin">
-<meta property="article:tag" content="VSCode">
+<meta property="article:tag" content="CSS面试题">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/">
+<link rel="canonical" href="http://example.com/2022/06/26/display%E7%9A%84block%E3%80%81inline%E3%80%81inline-block%E7%9A%84%E5%8C%BA%E5%88%AB/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/","path":"2022/06/20/VSCode配置/","title":"VSCode配置"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/26/display%E7%9A%84block%E3%80%81inline%E3%80%81inline-block%E7%9A%84%E5%8C%BA%E5%88%AB/","path":"2022/06/26/display的block、inline、inline-block的区别/","title":"display的block、inline、inline-block的区别"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>VSCode配置 | LIFE×WORK</title>
+<title>display的block、inline、inline-block的区别 | LIFE×WORK</title>
   
 
 
@@ -132,7 +132,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -145,7 +145,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VSCode%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">1.</span> <span class="nav-text">VSCode快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VSCode%E6%8F%92%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">VSCode插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode%E5%9F%BA%E7%A1%80%E6%8F%92%E4%BB%B6"><span class="nav-number">2.1.</span> <span class="nav-text">VSCode基础插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode%E5%89%8D%E7%AB%AF%E6%8F%92%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">VSCode前端插件</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -224,7 +223,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/20/VSCode%E9%85%8D%E7%BD%AE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/26/display%E7%9A%84block%E3%80%81inline%E3%80%81inline-block%E7%9A%84%E5%8C%BA%E5%88%AB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -237,12 +236,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="VSCode配置 | LIFE×WORK">
+      <meta itemprop="name" content="display的block、inline、inline-block的区别 | LIFE×WORK">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          VSCode配置
+          display的block、inline、inline-block的区别
         </h1>
 
         <div class="post-meta-container">
@@ -252,15 +251,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-06-20 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-20T00:00:00+08:00">2022-06-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-06-23 20:26:06" itemprop="dateModified" datetime="2022-06-23T20:26:06+08:00">2022-06-23</time>
+      <time title="Created: 2022-06-26 22:49:14 / Modified: 23:02:46" itemprop="dateCreated datePublished" datetime="2022-06-26T22:49:14+08:00">2022-06-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -268,7 +261,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/" itemprop="url" rel="index"><span itemprop="name">程序员的自我修养</span></a>
+          <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
         </span>
     </span>
 
@@ -282,107 +275,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>对VSCode配置进行总结。</p>
+        <p>（属性）</p>
 <span id="more"></span>
 
 
-<h2 id="VSCode快捷键"><a href="#VSCode快捷键" class="headerlink" title="VSCode快捷键"></a>VSCode快捷键</h2><ul>
-<li>跳到下一行：Ctrl + Enter</li>
-<li>单行注释：Ctrl + /</li>
-<li>多行注释：Ctrl + Shift + /<blockquote>
-<p>VSCode默认为Shift + Alt + A，需要手动修改</p>
-</blockquote>
+<ul>
+<li><p>block：独占一行；可以设置width、height、margin、padding属性，宽度默认为父级宽度的100%；换行显示。  </p>
 </li>
-<li>添加多个光标：Ctrl + Alt + 上下箭头</li>
+<li><p>inline：相邻元素在一行上，一行可以显示多个；width、height直接设置无效，可以设置水平方向的margin、padding属性，不能设置垂直方向的margin、padding属性，宽度默认为其本身宽度；同行显示。</p>
+</li>
+<li><p>inline-block：相邻元素在一行上，一行可以显示多个；可以设置width、height、margin、padding属性，宽度默认为其本身宽度；同行显示。</p>
+</li>
 </ul>
-<h2 id="VSCode插件"><a href="#VSCode插件" class="headerlink" title="VSCode插件"></a>VSCode插件</h2><h3 id="VSCode基础插件"><a href="#VSCode基础插件" class="headerlink" title="VSCode基础插件"></a>VSCode基础插件</h3><table>
-<thead>
-<tr>
-<th>插件名称</th>
-<th>插件作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>One Dark Pro</td>
-<td>暗黑主题，选择One Dark Pro Darker</td>
-</tr>
-<tr>
-<td>vscode-icons</td>
-<td>替换成好认的图标</td>
-</tr>
-<tr>
-<td>indent-rainbow</td>
-<td>s使得缩进更好认（交替四种颜色，错了变红）</td>
-</tr>
-<tr>
-<td>Indenticator</td>
-<td>Highlights your current indent depth</td>
-</tr>
-<tr>
-<td>Code Spell Checker</td>
-<td>Spelling checker for source code</td>
-</tr>
-<tr>
-<td>Project Manager</td>
-<td>Easily switch between projects</td>
-</tr>
-<tr>
-<td>Markdown All in One</td>
-<td>All you need to write Markdown</td>
-</tr>
-<tr>
-<td>Bookmarks</td>
-<td>Mark lines and jump to them</td>
-</tr>
-<tr>
-<td>GitLens — Git supercharged</td>
-<td>相比于VSCode内置Git，增加了branches、remotes、stashes、tags、contributors</td>
-</tr>
-<tr>
-<td>Git Graph</td>
-<td>图形化显示提交历史</td>
-</tr>
-</tbody></table>
-<h3 id="VSCode前端插件"><a href="#VSCode前端插件" class="headerlink" title="VSCode前端插件"></a>VSCode前端插件</h3><table>
-<thead>
-<tr>
-<th>插件名称</th>
-<th>插件作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Live Server</td>
-<td>Launch a development local Server with live reload feature for static &amp; dynamic pages</td>
-</tr>
-<tr>
-<td>Image preview</td>
-<td>光标悬浮在图片路径上时，显示图片预览</td>
-</tr>
-<tr>
-<td>Auto Rename Tag</td>
-<td>Auto rename paired HTML/XML tag</td>
-</tr>
-<tr>
-<td>Auto Close Tag</td>
-<td>Automatically add HTML/XML close tag</td>
-</tr>
-<tr>
-<td>CSS Peek</td>
-<td>Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition</td>
-</tr>
-<tr>
-<td>Vetur</td>
-<td>Syntax highlighting</td>
-</tr>
-<tr>
-<td>Vue 3 Snippets</td>
-<td>A Vue.js 3 And Vue.js 2 Code Snippets Extension</td>
-</tr>
-<tr>
-<td>ESLint</td>
-<td>代码质量校验工具</td>
-</tr>
-</tbody></table>
 
     </div>
 
@@ -392,21 +296,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/VSCode/" rel="tag"><i class="fa fa-tag"></i> VSCode</a>
+              <a href="/tags/CSS%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> CSS面试题</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/06/20/%E5%9C%9F%E6%9D%BE%E8%AE%B0/" rel="prev" title="土松记">
-                  <i class="fa fa-chevron-left"></i> 土松记
+                <a href="/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/" rel="prev" title="对盒子模型的理解">
+                  <i class="fa fa-chevron-left"></i> 对盒子模型的理解
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/06/21/%E5%AF%B9HTML5%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/" rel="next" title="对HTML5语义化的理解">
-                  对HTML5语义化的理解 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
