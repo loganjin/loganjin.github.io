@@ -21,28 +21,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="（Web APIs）">
+    <meta name="description" content="（盒子模型）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="什么是DOM和BOM？">
-<meta property="og:url" content="http://example.com/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/index.html">
+<meta property="og:title" content="对盒子模型的理解">
+<meta property="og:url" content="http://example.com/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="LIFE×WORK">
-<meta property="og:description" content="（Web APIs）">
+<meta property="og:description" content="（盒子模型）">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-22T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-23T12:34:15.505Z">
+<meta property="article:published_time" content="2022-06-26T14:39:14.000Z">
+<meta property="article:modified_time" content="2022-06-26T14:50:54.518Z">
 <meta property="article:author" content="Logan Jin">
-<meta property="article:tag" content="JS面试题">
+<meta property="article:tag" content="CSS面试题">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/">
+<link rel="canonical" href="http://example.com/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/","path":"2022/06/23/什么是DOM和BOM？/","title":"什么是DOM和BOM？"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/","path":"2022/06/26/对盒子模型的理解/","title":"对盒子模型的理解"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>什么是DOM和BOM？ | LIFE×WORK</title>
+<title>对盒子模型的理解 | LIFE×WORK</title>
   
 
 
@@ -223,7 +223,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -236,12 +236,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="什么是DOM和BOM？ | LIFE×WORK">
+      <meta itemprop="name" content="对盒子模型的理解 | LIFE×WORK">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          什么是DOM和BOM？
+          对盒子模型的理解
         </h1>
 
         <div class="post-meta-container">
@@ -253,7 +253,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-23 00:00:00 / Modified: 20:34:15" itemprop="dateCreated datePublished" datetime="2022-06-23T00:00:00+08:00">2022-06-23</time>
+      <time title="Created: 2022-06-26 22:39:14 / Modified: 22:50:54" itemprop="dateCreated datePublished" datetime="2022-06-26T22:39:14+08:00">2022-06-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -275,15 +275,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>（Web APIs）</p>
+        <p>（盒子模型）</p>
 <span id="more"></span>
 
 
 <ul>
-<li>DOM：<br>指的是文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。</li>
-</ul>
-<ul>
-<li>BOM：<br>指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的方法和接口。<br>BOM的核心是window，而window对象具有双重角色，它既是js访问浏览器窗口的一个接口，又是一个全局（Global）对象，定义在全局作用域中的变量、函数都会变成window对象的属性和方法。window对象含有location对象、navigator对象、screen对象等子对象，并且DOM的最根本的对象document对象也是window对象的子对象。</li>
+<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
+</li>
+<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
+</li>
+<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
+<ol>
+<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
+<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
+<li>inherit: 从父元素继承。</li>
+</ol>
+</li>
 </ul>
 
     </div>
@@ -294,21 +301,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/JS%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> JS面试题</a>
+              <a href="/tags/CSS%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> CSS面试题</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/06/23/%E5%AF%B9%E6%AF%94v-if%E5%92%8Cv-show/" rel="prev" title="对比v-if和v-show">
-                  <i class="fa fa-chevron-left"></i> 对比v-if和v-show
+                <a href="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/" rel="prev" title="用CSS实现一个三角形">
+                  <i class="fa fa-chevron-left"></i> 用CSS实现一个三角形
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/" rel="next" title="data为什么是一个函数而不是对象">
-                  data为什么是一个函数而不是对象 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
