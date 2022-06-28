@@ -1,6 +1,6 @@
 ---
 title: position的属性有哪些？区别是什么？
-date: 2022-06-27
+date: 2022-06-28
 tags:
 - CSS面试题
 categories:
