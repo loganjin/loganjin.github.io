@@ -1,5 +1,5 @@
 ---
-title: absolute、fixed的共同点和不同点:
+title: absolute、fixed的共同点和不同点
 date: 2022-06-28
 tags:
 - CSS面试题
