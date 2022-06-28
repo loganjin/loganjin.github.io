@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
+    <title>CSS选择器及其优先级</title>
+    <url>/2022/06/27/CSS%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%8A%E5%85%B6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<p>（选择器）</p>
 <span id="more"></span>
 
 
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+<ul>
+<li>优先级：<br>!important：∞<br>行内样式： 1，0，0，0<br>id选择器：0，1，0，0<br>类选择器或伪类选择器或属性选择器：0，0，1，0<br>标签选择器或伪元素选择器：0，0，0，1<br>通配符选择器或继承：0，0，0，0  </li>
+</ul>
+<ul>
+<li>attention:  <ol>
+<li>值从左到右，一级大于一级，数位之间没有进制，级别之间不可超越。  </li>
+<li>如果是复合选择器，则有权重叠加的问题，需要计算权重。</li>
+<li>如果样式冲突时优先级相同，则最后出现的样式生效（CSS层叠性）。</li>
+<li>继承的权重是0，如果该元素没有直接选中，不管父元素权重多高，子元素得到的权重都是0。</li>
+<li>样式表的来源不同时，优先级顺序为：内联样式&gt;内部样式&gt;外部样式&gt;浏览器用户自定义样式&gt;浏览器默认样式。</li>
+</ol>
+</li>
 </ul>
 ]]></content>
       <categories>
-        <category>程序员的自我修养</category>
+        <category>面试题</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -53,31 +57,27 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS选择器及其优先级</title>
-    <url>/2022/06/27/CSS%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%8A%E5%85%B6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<p>（选择器）</p>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
 <span id="more"></span>
 
 
-<ul>
-<li>优先级：<br>!important：∞<br>行内样式： 1，0，0，0<br>id选择器：0，1，0，0<br>类选择器或伪类选择器或属性选择器：0，0，1，0<br>标签选择器或伪元素选择器：0，0，0，1<br>通配符选择器或继承：0，0，0，0  </li>
-</ul>
-<ul>
-<li>attention:  <ol>
-<li>值从左到右，一级大于一级，数位之间没有进制，级别之间不可超越。  </li>
-<li>如果是复合选择器，则有权重叠加的问题，需要计算权重。</li>
-<li>如果样式冲突时优先级相同，则最后出现的样式生效（CSS层叠性）。</li>
-<li>继承的权重是0，如果该元素没有直接选中，不管父元素权重多高，子元素得到的权重都是0。</li>
-<li>样式表的来源不同时，优先级顺序为：内联样式&gt;内部样式&gt;外部样式&gt;浏览器用户自定义样式&gt;浏览器默认样式。</li>
-</ol>
-</li>
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
 </ul>
 ]]></content>
       <categories>
-        <category>面试题</category>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
-        <tag>CSS面试题</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -275,31 +275,6 @@
       </tags>
   </entry>
   <entry>
-    <title>display的属性值及其作用</title>
-    <url>/2022/06/26/display%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8/</url>
-    <content><![CDATA[<p>（属性）</p>
-<span id="more"></span>
-
-
-<p>display设置对象如何显示：  </p>
-<ul>
-<li>none：元素不显示，并且会从文档流中移除，即不保留位置。  </li>
-<li>block</li>
-<li>inline</li>
-<li>inline-block</li>
-<li>list-item</li>
-<li>table</li>
-<li>inherit</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>display的block、inline、inline-block的区别</title>
     <url>/2022/06/26/display%E7%9A%84block%E3%80%81inline%E3%80%81inline-block%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<p>（属性）</p>
@@ -323,20 +298,28 @@
       </tags>
   </entry>
   <entry>
-    <title>href、src的区别</title>
-    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<ul>
-<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
-</ul>
+    <title>display的属性值及其作用</title>
+    <url>/2022/06/26/display%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8/</url>
+    <content><![CDATA[<p>（属性）</p>
+<span id="more"></span>
+
+
+<p>display设置对象如何显示：  </p>
 <ul>
-<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
+<li>none：元素不显示，并且会从文档流中移除，即不保留位置。  </li>
+<li>block</li>
+<li>inline</li>
+<li>inline-block</li>
+<li>list-item</li>
+<li>table</li>
+<li>inherit</li>
 </ul>
 ]]></content>
       <categories>
         <category>面试题</category>
       </categories>
       <tags>
-        <tag>HTML面试题</tag>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -366,6 +349,23 @@
       </categories>
       <tags>
         <tag>CSS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>href、src的区别</title>
+    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<ul>
+<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
+</ul>
+<ul>
+<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>HTML面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -471,40 +471,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>基于Hexo博客框架的多设备博客管理</title>
-    <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
-<span id="more"></span>
-
-
-<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建本地blog文件夹，同步到GitHub。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span></span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以<span class="built_in">clone</span>时只<span class="built_in">clone</span>了hexo分支，<span class="built_in">clone</span>这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line"><span class="comment">#将.git文件夹复制到本地blog文件夹。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git <span class="built_in">clone</span>主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span></span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的<span class="string">.git</span>文件夹会覆盖我们需要的<span class="string">.git</span>文件夹。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改_config.yml中的deploy参数为main。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件<span class="params">(hexo操作)</span>，hexo分支管理博客文件<span class="params">(git操作)</span>。</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单行文本溢出隐藏</title>
-    <url>/2022/06/26/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
-    <content><![CDATA[<p>（开发）</p>
-<span id="more"></span>
-
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 强制一行内显示所有文本 */</span></span><br><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出时用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>土松记</title>
     <url>/2022/06/20/%E5%9C%9F%E6%9D%BE%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><ul>
@@ -536,6 +502,25 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>修勾</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于Hexo博客框架的多设备博客管理</title>
+    <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
+<span id="more"></span>
+
+
+<h2 id="操作步骤（未有博客）"><a href="#操作步骤（未有博客）" class="headerlink" title="操作步骤（未有博客）"></a>操作步骤（未有博客）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建本地blog文件夹，同步到GitHub。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，删除除.git文件夹外全部文件。  </span></span><br><span class="line">attention: 因为默认分支已经设成了hexo分支，所以<span class="built_in">clone</span>时只<span class="built_in">clone</span>了hexo分支，<span class="built_in">clone</span>这个空仓库是为了其中隐藏的.git文件夹，从而达到通过git操作hexo分支管理博客文件的目的。</span><br><span class="line"></span><br><span class="line"><span class="comment">#将.git文件夹复制到本地blog文件夹。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件(hexo操作)，hexo分支管理博客文件(git操作)。</span><br><span class="line"></span><br><span class="line">attention: 由于git不能嵌套上传，如果存在git <span class="built_in">clone</span>主题操作，应该将themes文件夹内的.git文件夹删除。</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="操作步骤（已有博客）"><a href="#操作步骤（已有博客）" class="headerlink" title="操作步骤（已有博客）"></a>操作步骤（已有博客）</h2><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在Github仓库新建hexo分支，并将其设置为默认分支。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git clone git@github.com:loganjin/loganjin.github.io.git到本地电脑，生成loganjin.github.io文件夹。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地loganjin.github.io文件夹下依次执行npm i hexo-cli -g、npm install和npm i hexo-deployer-git --save。  </span></span><br><span class="line">attention: 此时如果使用hexo init，会初始化博客，最外层的_config.yml文件会恢复成默认值，新生成的<span class="string">.git</span>文件夹会覆盖我们需要的<span class="string">.git</span>文件夹。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改_config.yml中的deploy参数为main。</span></span><br><span class="line"></span><br><span class="line">这样就可以通过main分支管理静态文件<span class="params">(hexo操作)</span>，hexo分支管理博客文件<span class="params">(git操作)</span>。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -618,34 +603,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>对盒子模型的理解</title>
-    <url>/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<p>（盒子模型）</p>
-<span id="more"></span>
-
-
-<ul>
-<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
-</li>
-<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
-</li>
-<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
-<ol>
-<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
-<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
-<li>inherit: 从父元素继承。</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对比v-if和v-show</title>
     <url>/2022/06/23/%E5%AF%B9%E6%AF%94v-if%E5%92%8Cv-show/</url>
     <content><![CDATA[<p>（基础知识）</p>
@@ -677,6 +634,54 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对盒子模型的理解</title>
+    <url>/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<p>（盒子模型）</p>
+<span id="more"></span>
+
+
+<ul>
+<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
+</li>
+<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
+</li>
+<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
+<ol>
+<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
+<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
+<li>inherit: 从父元素继承。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用CSS实现一个三角形</title>
+    <url>/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
+    <content><![CDATA[<p>（开发）<br>以上三角形为例</p>
+<span id="more"></span>
+
+
+<p>代码实现：</p>
+<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.png" class="">
+
+<p>原理分析：</p>
+<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" class="">
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -719,18 +724,13 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>用CSS实现一个三角形</title>
-    <url>/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
-    <content><![CDATA[<p>（开发）<br>以上三角形为例</p>
+    <title>单行文本溢出隐藏</title>
+    <url>/2022/06/26/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
+    <content><![CDATA[<p>（开发）</p>
 <span id="more"></span>
 
 
-<p>代码实现：</p>
-<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.png" class="">
-
-<p>原理分析：</p>
-<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" class="">
-]]></content>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 强制一行内显示所有文本 */</span></span><br><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出时用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>面试题</category>
       </categories>
