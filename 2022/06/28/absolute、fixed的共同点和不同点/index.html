@@ -21,28 +21,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="_config.ymlAfter the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called _config.yml: The first one is under site root directory, which co">
+    <meta name="description" content="（布局）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客框架NexT主题美化">
-<meta property="og:url" content="http://example.com/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/index.html">
+<meta property="og:title" content="absolute、fixed的共同点和不同点">
+<meta property="og:url" content="http://example.com/2022/06/28/absolute%E3%80%81fixed%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9%E5%92%8C%E4%B8%8D%E5%90%8C%E7%82%B9/index.html">
 <meta property="og:site_name" content="LIFE×WORK">
-<meta property="og:description" content="_config.ymlAfter the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called _config.yml: The first one is under site root directory, which co">
+<meta property="og:description" content="（布局）">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-23T12:26:11.705Z">
+<meta property="article:published_time" content="2022-06-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-28T09:36:21.268Z">
 <meta property="article:author" content="Logan Jin">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="CSS面试题">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
+<link rel="canonical" href="http://example.com/2022/06/28/absolute%E3%80%81fixed%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9%E5%92%8C%E4%B8%8D%E5%90%8C%E7%82%B9/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/","path":"2022/06/18/Hexo博客框架NexT主题美化/","title":"Hexo博客框架NexT主题美化"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/28/absolute%E3%80%81fixed%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9%E5%92%8C%E4%B8%8D%E5%90%8C%E7%82%B9/","path":"2022/06/28/absolute、fixed的共同点和不同点/","title":"absolute、fixed的共同点和不同点"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo博客框架NexT主题美化 | LIFE×WORK</title>
+<title>absolute、fixed的共同点和不同点 | LIFE×WORK</title>
   
 
 
@@ -132,7 +132,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -145,7 +145,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#config-yml"><span class="nav-number">1.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#config-yml%E7%BE%8E%E5%8C%96"><span class="nav-number">2.</span> <span class="nav-text">_config.yml美化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#config-next-yml%E7%BE%8E%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">_config.next.yml美化</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -224,7 +223,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/28/absolute%E3%80%81fixed%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9%E5%92%8C%E4%B8%8D%E5%90%8C%E7%82%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -237,12 +236,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hexo博客框架NexT主题美化 | LIFE×WORK">
+      <meta itemprop="name" content="absolute、fixed的共同点和不同点 | LIFE×WORK">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo博客框架NexT主题美化
+          absolute、fixed的共同点和不同点
         </h1>
 
         <div class="post-meta-container">
@@ -252,15 +251,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-06-18 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-18T00:00:00+08:00">2022-06-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-06-23 20:26:11" itemprop="dateModified" datetime="2022-06-23T20:26:11+08:00">2022-06-23</time>
+      <time title="Created: 2022-06-28 00:00:00 / Modified: 17:36:21" itemprop="dateCreated datePublished" datetime="2022-06-28T00:00:00+08:00">2022-06-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -268,7 +261,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/" itemprop="url" rel="index"><span itemprop="name">程序员的自我修养</span></a>
+          <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
         </span>
     </span>
 
@@ -282,23 +275,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
-<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
-<p>In order to resolve this issue, we recommend using the <a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
-<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
+        <p>（布局）</p>
 <span id="more"></span>
 
 
-<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
-<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: en<br>timezone: ‘Asia/Shanghai’<br>highlight-&gt;auto_detect<br>theme: next  </p>
-</blockquote>
-<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
-<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: home、categories、tags<br>menu_settings: badges<br>avatar: me<br>social: Github、E-Mail、Bilibili、Instagram<br>footer: </p>
-<blockquote>
-<p>since<br>icon-&gt;animated  </p>
-</blockquote>
-<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
-</blockquote>
+<ul>
+<li>共同点：  <ol>
+<li>改变行内元素的呈现方式，将display设置为inline-block。</li>
+<li>使元素脱离普通文档流，不再占据文档物理空间。</li>
+<li>覆盖非定位文档元素。</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>不同点：<ol>
+<li>absolute和fixed的根元素不同，absolute的根元素可以设置，fixed的根元素是浏览器。</li>
+<li>在有滚动条的页面中，absolute会跟着父元素进行移动，fixed固定在页面的具体位置。</li>
+</ol>
+</li>
+</ul>
 
     </div>
 
@@ -308,21 +303,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/tags/CSS%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> CSS面试题</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/" rel="prev" title="基于Hexo博客框架的多设备博客管理">
-                  <i class="fa fa-chevron-left"></i> 基于Hexo博客框架的多设备博客管理
+                <a href="/2022/06/28/position%E7%9A%84%E5%B1%9E%E6%80%A7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/" rel="prev" title="position的属性有哪些？区别是什么？">
+                  <i class="fa fa-chevron-left"></i> position的属性有哪些？区别是什么？
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/" rel="next" title="Hexo博客框架Front-matter语法">
-                  Hexo博客框架Front-matter语法 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
