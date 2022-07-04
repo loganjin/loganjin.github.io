@@ -768,4 +768,27 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
         <tag>HTML面试题</tag>
       </tags>
   </entry>
+  <entry>
+    <title>清除浮动的方式</title>
+    <url>/2022/06/28/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>（布局）</p>
+<span id="more"></span>
+
+
+<ol>
+<li><p>给父级盒子添加上height属性。<br>缺点：由于不清楚父盒子内容有多少，在很多情况下不方便对其给高度，理想做法是子盒子撑开父盒子。</p>
+</li>
+<li><p>额外标签法：在浮动元素末尾添加一个标签，eg: <div style='clear:both'></div><br>缺点：这添加了许多无意义的标签，结构化较差。</p>
+</li>
+<li><p>给父盒子添加overflow属性（）</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
+      </tags>
+  </entry>
 </search>
