@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
+    <title>CSS选择器及其优先级</title>
+    <url>/2022/06/27/CSS%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%8A%E5%85%B6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<p>（选择器）</p>
 <span id="more"></span>
 
 
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+<ul>
+<li>优先级：<br>!important：∞<br>行内样式： 1，0，0，0<br>id选择器：0，1，0，0<br>类选择器或伪类选择器或属性选择器：0，0，1，0<br>标签选择器或伪元素选择器：0，0，0，1<br>通配符选择器或继承：0，0，0，0  </li>
+</ul>
+<ul>
+<li>attention:  <ol>
+<li>值从左到右，一级大于一级，数位之间没有进制，级别之间不可超越。  </li>
+<li>如果是复合选择器，则有权重叠加的问题，需要计算权重。</li>
+<li>如果样式冲突时优先级相同，则最后出现的样式生效（CSS层叠性）。</li>
+<li>继承的权重是0，如果该元素没有直接选中，不管父元素权重多高，子元素得到的权重都是0。</li>
+<li>样式表的来源不同时，优先级顺序为：内联样式&gt;内部样式&gt;外部样式&gt;浏览器用户自定义样式&gt;浏览器默认样式。</li>
+</ol>
+</li>
 </ul>
 ]]></content>
       <categories>
-        <category>程序员的自我修养</category>
+        <category>面试题</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -53,31 +57,77 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS选择器及其优先级</title>
-    <url>/2022/06/27/CSS%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%8A%E5%85%B6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<p>（选择器）</p>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客框架命令行指令</title>
+    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<ul>
+<li>创建新文章<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
+拓：  <table>
+<thead>
+<tr>
+<th>布局（layout）</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>source/_posts</td>
+</tr>
+<tr>
+<td>page</td>
+<td>source</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>source/_drafts</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
 <span id="more"></span>
 
 
 <ul>
-<li>优先级：<br>!important：∞<br>行内样式： 1，0，0，0<br>id选择器：0，1，0，0<br>类选择器或伪类选择器或属性选择器：0，0，1，0<br>标签选择器或伪元素选择器：0，0，0，1<br>通配符选择器或继承：0，0，0，0  </li>
-</ul>
-<ul>
-<li>attention:  <ol>
-<li>值从左到右，一级大于一级，数位之间没有进制，级别之间不可超越。  </li>
-<li>如果是复合选择器，则有权重叠加的问题，需要计算权重。</li>
-<li>如果样式冲突时优先级相同，则最后出现的样式生效（CSS层叠性）。</li>
-<li>继承的权重是0，如果该元素没有直接选中，不管父元素权重多高，子元素得到的权重都是0。</li>
-<li>样式表的来源不同时，优先级顺序为：内联样式&gt;内部样式&gt;外部样式&gt;浏览器用户自定义样式&gt;浏览器默认样式。</li>
-</ol>
+<li><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo clean</p>
+</li>
+<li><p>生成静态文件<br>hexo g（即hexo generate）</p>
+</li>
+<li><p>启动服务器：默认情况下，访问网址为：<a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a><br>hexo s（即hexo server）</p>
+</li>
+<li><p>一键部署<br>npm i hexo-deployer-git –save<br>hexo d（即hexo deploy）</p>
+</li>
+<li><p>文件生成后立即部署网站<br>hexo g -d</p>
 </li>
 </ul>
 ]]></content>
       <categories>
-        <category>面试题</category>
+        <category>程序员的自我修养</category>
       </categories>
       <tags>
-        <tag>CSS面试题</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -209,53 +259,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客框架命令行指令</title>
-    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<ul>
-<li>创建新文章<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
-拓：  <table>
-<thead>
-<tr>
-<th>布局（layout）</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>source/_posts</td>
-</tr>
-<tr>
-<td>page</td>
-<td>source</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>source/_drafts</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
+    <title>data为什么是一个函数而不是对象</title>
+    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>（基础知识）</p>
 <span id="more"></span>
 
 
-<ul>
-<li><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo clean</p>
-</li>
-<li><p>生成静态文件<br>hexo g（即hexo generate）</p>
-</li>
-<li><p>启动服务器：默认情况下，访问网址为：<a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a><br>hexo s（即hexo server）</p>
-</li>
-<li><p>一键部署<br>npm i hexo-deployer-git –save<br>hexo d（即hexo deploy）</p>
-</li>
-<li><p>文件生成后立即部署网站<br>hexo g -d</p>
-</li>
-</ul>
+<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
 ]]></content>
       <categories>
-        <category>程序员的自我修养</category>
+        <category>面试题</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Vue面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -312,39 +328,6 @@
       </tags>
   </entry>
   <entry>
-    <title>data为什么是一个函数而不是对象</title>
-    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>href、src的区别</title>
-    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<ul>
-<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
-</ul>
-<ul>
-<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>HTML面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>display的属性值及其作用</title>
     <url>/2022/06/26/display%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8/</url>
     <content><![CDATA[<p>（属性）</p>
@@ -370,48 +353,20 @@
       </tags>
   </entry>
   <entry>
-    <title>个人博客搭建</title>
-    <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
-<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
-<p>动态博客</p>
-<blockquote>
-<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>静态博客  </p>
-<blockquote>
-<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
-</blockquote>
-</blockquote>
-<span id="more"></span>
-
-
-<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 安装Hexo</span></span><br><span class="line">npm i hexo-<span class="keyword">cli</span> -g</span><br><span class="line"></span><br><span class="line"><span class="meta"># 初始化博客</span></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"><span class="meta"># 在_config.yml中修改参数</span></span><br><span class="line"><span class="symbol">type:</span> git</span><br><span class="line"><span class="symbol">repository:</span> git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line"><span class="symbol">branch:</span> main</span><br><span class="line"></span><br><span class="line"><span class="meta"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="meta"># 生成静态文件</span></span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span></span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 一键部署</span></span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 文件生成后立即部署网站</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
-<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
-<blockquote>
-<p>_config.yml: 主题配置文件  </p>
-</blockquote>
-<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
-</blockquote>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>前期配置好nodejs、git。</li>
-<li>所有命令在目标文件夹的git bash中执行。</li>
+    <title>href、src的区别</title>
+    <url>/2022/06/21/href%E3%80%81src%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<ul>
+<li>href：<br>表示超文本引用，指向网络资源，建立和当前元素或文档的链接关系。当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。<br>常在a、link标签中。</li>
 </ul>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name"><span class="name">extends</span></span> &#x27;_layout.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/post.swig&#x27; <span class="keyword">as</span> post_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/sidebar.swig&#x27; <span class="keyword">as</span> sidebar_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.index_with_subtitle and config.subtitle %&#125;</span><span class="language-xml"> - </span><span class="template-variable">&#123;&#123;config.subtitle &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> page_class %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> is_home() %&#125;</span><span class="language-xml">page-home</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> -%&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> content %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> post <span class="keyword">in</span> page.posts %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> &#x27;_partials/pagination.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> sidebar %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; sidebar_template.render(false) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span></span><br></pre></td></tr></table></figure>
-install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
+<ul>
+<li>src：<br>表示资源引用，指向外部资源，指向的内容会嵌入到当前标签的位置。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，所以js脚本一般放在页面底部。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>程序员的自我修养</category>
+        <category>面试题</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>HTML面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -461,6 +416,72 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
+    <title>个人博客搭建</title>
+    <url>/2022/06/17/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>本博客基于Hexo框架搭建，使用NexT主题。</p>
+<h2 id="博客框架分类"><a href="#博客框架分类" class="headerlink" title="博客框架分类"></a>博客框架分类</h2><blockquote>
+<p>动态博客</p>
+<blockquote>
+<p><a href="https://wordpress.com/zh-cn/">WordPress</a>，基于Php  </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>静态博客  </p>
+<blockquote>
+<p><a href="https://hexo.io/zh-cn/">Hexo</a>，基于JavaScript<br><a href="https://jekyllrb.com/">Jekyll</a><br><a href="https://gohugo.io/">Hugo</a>，基于Go<br><a href="https://vuepress.vuejs.org/zh/">VuePress</a><br><a href="https://b3log.org/solo/">Solo</a>，基于Java  </p>
+</blockquote>
+</blockquote>
+<span id="more"></span>
+
+
+<h2 id="Hexo操作"><a href="#Hexo操作" class="headerlink" title="Hexo操作"></a>Hexo操作</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 安装Hexo</span></span><br><span class="line">npm i hexo-<span class="keyword">cli</span> -g</span><br><span class="line"></span><br><span class="line"><span class="meta"># 初始化博客</span></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"><span class="meta"># 在_config.yml中修改参数</span></span><br><span class="line"><span class="symbol">type:</span> git</span><br><span class="line"><span class="symbol">repository:</span> git@github.com:loganjin/loganjin.github.io.git</span><br><span class="line"><span class="symbol">branch:</span> main</span><br><span class="line"></span><br><span class="line"><span class="meta"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="meta"># 生成静态文件</span></span><br><span class="line">hexo g（即hexo generate）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 启动服务器：默认情况下，访问网址为：http://localhost:4000/。</span></span><br><span class="line">hexo s（即hexo server）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 一键部署</span></span><br><span class="line">npm i hexo-deployer-git --save</span><br><span class="line">hexo d（即hexo deploy）</span><br><span class="line"></span><br><span class="line"><span class="meta"># 文件生成后立即部署网站</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Hexo文件夹解析"><a href="#Hexo文件夹解析" class="headerlink" title="Hexo文件夹解析"></a>Hexo文件夹解析</h2><blockquote>
+<p>.deploy.git（hexo d时生成）<br>.git<br>node_modules（npm install时生成）<br>public（hexo g时生成）<br>scaffolds: 文章模板文件夹<br>source: 源文件夹<br>themes: 主题文件夹  </p>
+<blockquote>
+<p>_config.yml: 主题配置文件  </p>
+</blockquote>
+<p>.gitignore<br>_config.yml: Hexo配置文件<br>db.json: 缓存文件<br>package.json  </p>
+</blockquote>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>前期配置好nodejs、git。</li>
+<li>所有命令在目标文件夹的git bash中执行。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>Hexo can not display NexT theme, the website only shows text below with white background:<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name"><span class="name">extends</span></span> &#x27;_layout.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/post.swig&#x27; <span class="keyword">as</span> post_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">import</span> &#x27;_macro/sidebar.swig&#x27; <span class="keyword">as</span> sidebar_template %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.index_with_subtitle and config.subtitle %&#125;</span><span class="language-xml"> - </span><span class="template-variable">&#123;&#123;config.subtitle &#125;&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> page_class %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> is_home() %&#125;</span><span class="language-xml">page-home</span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> -%&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> content %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> post <span class="keyword">in</span> page.posts %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> &#x27;_partials/pagination.swig&#x27; %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> sidebar %&#125;</span><span class="language-xml"> </span><span class="template-variable">&#123;&#123; sidebar_template.render(false) &#125;&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span></span><br></pre></td></tr></table></figure>
+install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> i hexo-renderer-swig</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么是DOM和BOM？</title>
+    <url>/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/</url>
+    <content><![CDATA[<p>（Web APIs）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>DOM：<br>指的是文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。</li>
+</ul>
+<ul>
+<li>BOM：<br>指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的方法和接口。<br>BOM的核心是window，而window对象具有双重角色，它既是js访问浏览器窗口的一个接口，又是一个全局（Global）对象，定义在全局作用域中的变量、函数都会变成window对象的属性和方法。window对象含有location对象、navigator对象、screen对象等子对象，并且DOM的最根本的对象document对象也是window对象的子对象。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>JS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>代码输出结果0</title>
     <url>/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/</url>
     <content><![CDATA[<p>（代码输出结果）</p>
@@ -477,6 +498,21 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>JS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单行文本溢出隐藏</title>
+    <url>/2022/06/26/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
+    <content><![CDATA[<p>（开发）</p>
+<span id="more"></span>
+
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 强制一行内显示所有文本 */</span></span><br><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出时用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -514,27 +550,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>什么是DOM和BOM？</title>
-    <url>/2022/06/23/%E4%BB%80%E4%B9%88%E6%98%AFDOM%E5%92%8CBOM%EF%BC%9F/</url>
-    <content><![CDATA[<p>（Web APIs）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>DOM：<br>指的是文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。</li>
-</ul>
-<ul>
-<li>BOM：<br>指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的方法和接口。<br>BOM的核心是window，而window对象具有双重角色，它既是js访问浏览器窗口的一个接口，又是一个全局（Global）对象，定义在全局作用域中的变量、函数都会变成window对象的属性和方法。window对象含有location对象、navigator对象、screen对象等子对象，并且DOM的最根本的对象document对象也是window对象的子对象。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>JS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于Hexo博客框架的多设备博客管理</title>
     <url>/2022/06/18/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<h2 id="Hexo机制"><a href="#Hexo机制" class="headerlink" title="Hexo机制"></a>Hexo机制</h2><p>Hexo部署到GitHub上面的只有<code>.deploy_git</code>文件夹内的静态文件，原始文件仍在本地<code>blog</code>文件夹中。</p>
@@ -551,6 +566,24 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多行文本溢出隐藏</title>
+    <url>/2022/06/26/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
+    <content><![CDATA[<p>（开发）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>基于行数截断：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 限制在一个块级元素内显示的文本行数 */</span></span><br><span class="line">-webkit-line-clamp: <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 弹性伸缩盒子模型显示 */</span></span><br><span class="line"><span class="attribute">display</span>: -webkit-box;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置弹性伸缩盒子的子元素的排列方式 */</span></span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line"></span><br><span class="line">(上面三个为CSS3内容，所以要加上-webkit-来实现浏览器兼容)</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出隐藏时，用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -578,83 +611,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>多行文本溢出隐藏</title>
-    <url>/2022/06/26/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
-    <content><![CDATA[<p>（开发）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>基于行数截断：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 限制在一个块级元素内显示的文本行数 */</span></span><br><span class="line">-webkit-line-clamp: <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 弹性伸缩盒子模型显示 */</span></span><br><span class="line"><span class="attribute">display</span>: -webkit-box;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 设置弹性伸缩盒子的子元素的排列方式 */</span></span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line"></span><br><span class="line">(上面三个为CSS3内容，所以要加上-webkit-来实现浏览器兼容)</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出隐藏时，用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单行文本溢出隐藏</title>
-    <url>/2022/06/26/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F/</url>
-    <content><![CDATA[<p>（开发）</p>
-<span id="more"></span>
-
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 强制一行内显示所有文本 */</span></span><br><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文本超过限定宽度时，溢出隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 当文本溢出时用省略号代替超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对比methods和computed</title>
-    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>相同点：<br>methods和computed最终结果相同。</li>
-</ul>
-<ul>
-<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>洗碗机.md</title>
-    <url>/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/</url>
-    <content><![CDATA[<h2 id="不能洗"><a href="#不能洗" class="headerlink" title="不能洗"></a>不能洗</h2><ul>
-<li>印花餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E5%8D%B0%E8%8A%B1%E9%A4%90%E5%85%B7.png" class="">  </li>
-<li>有金边餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%9C%89%E9%87%91%E8%BE%B9%E9%A4%90%E5%85%B7.png" class="">  </li>
-<li>实木制品：木碗、木筷子、木砧板、木铲等<br>推荐使用洗碗机专用筷子  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%B4%97%E7%A2%97%E6%9C%BA%E4%B8%93%E7%94%A8%E7%AD%B7%E5%AD%90.png" class="">  </li>
-</ul>
-<span id="more"></span>
-
-
-<h2 id="能洗"><a href="#能洗" class="headerlink" title="能洗"></a>能洗</h2><h2 id="洗不掉"><a href="#洗不掉" class="headerlink" title="洗不掉"></a>洗不掉</h2><ul>
-<li>鸡蛋羹</li>
-</ul>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>【家电测评】5年真实经验，全面解析洗碗机！超强干货！(<a href="https://www.bilibili.com/video/BV1XK4y1m7SH?spm_id_from=333.880.my_history.page.click&amp;vd_source=7bfc63e37b43d920ff112a7b729b0a36">https://www.bilibili.com/video/BV1XK4y1m7SH?spm_id_from=333.880.my_history.page.click&amp;vd_source=7bfc63e37b43d920ff112a7b729b0a36</a>)</p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>装修</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对Vue组件化的理解</title>
     <url>/2022/06/23/%E5%AF%B9Vue%E7%BB%84%E4%BB%B6%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<p>（基础知识）</p>
@@ -668,57 +624,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>Vue面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>清除浮动的方式</title>
-    <url>/2022/06/28/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p>（布局）</p>
-<span id="more"></span>
-
-
-<ol>
-<li><p>给父级盒子添加上height属性。<br>缺点：由于不清楚父盒子内容有多少，在很多情况下不方便对其给高度，理想做法是子盒子撑开父盒子。</p>
-</li>
-<li><p>额外标签法：在浮动元素末尾添加一个标签，eg: <div style='clear:both'></div><br>缺点：这添加了许多无意义的标签，结构化较差。</p>
-</li>
-<li><p>给父盒子添加overflow属性（）</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对盒子模型的理解</title>
-    <url>/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<p>（盒子模型）</p>
-<span id="more"></span>
-
-
-<ul>
-<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
-</li>
-<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
-</li>
-<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
-<ol>
-<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
-<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
-<li>inherit: 从父元素继承。</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -756,17 +661,93 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>用CSS实现一个三角形</title>
-    <url>/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
-    <content><![CDATA[<p>（开发）<br>以上三角形为例</p>
+    <title>对比methods和computed</title>
+    <url>/2022/06/23/%E5%AF%B9%E6%AF%94Methods%E5%92%8CComputed/</url>
+    <content><![CDATA[<p>（基础知识）</p>
 <span id="more"></span>
 
 
-<p>代码实现：</p>
-<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.png" class="">
+<ul>
+<li>相同点：<br>methods和computed最终结果相同。</li>
+</ul>
+<ul>
+<li>不同点：<br>computed会进行<code>缓存</code>,多次使用会观察有没有变化：没有变化就直接返回原有结果，不会重新调用，有变化会重新调用一次；methods每次使用都会调用一次。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>Vue面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对盒子模型的理解</title>
+    <url>/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<p>（盒子模型）</p>
+<span id="more"></span>
 
-<p>原理分析：</p>
-<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" class="">
+
+<ul>
+<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
+</li>
+<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
+</li>
+<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
+<ol>
+<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
+<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
+<li>inherit: 从父元素继承。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>洗碗机.md</title>
+    <url>/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/</url>
+    <content><![CDATA[<p>temp</p>
+<h2 id="不能洗"><a href="#不能洗" class="headerlink" title="不能洗"></a>不能洗</h2><ul>
+<li>印花餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E5%8D%B0%E8%8A%B1%E9%A4%90%E5%85%B7.png" class="">  </li>
+<li>有金边餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%9C%89%E9%87%91%E8%BE%B9%E9%A4%90%E5%85%B7.png" class="">  </li>
+<li>实木制品：木碗、木筷子、木砧板、木铲等<br>推荐使用洗碗机专用筷子  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%B4%97%E7%A2%97%E6%9C%BA%E4%B8%93%E7%94%A8%E7%AD%B7%E5%AD%90.png" class="">  </li>
+</ul>
+<span id="more"></span>
+
+
+<h2 id="能洗"><a href="#能洗" class="headerlink" title="能洗"></a>能洗</h2><h2 id="洗不掉"><a href="#洗不掉" class="headerlink" title="洗不掉"></a>洗不掉</h2><ul>
+<li>鸡蛋羹</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://www.bilibili.com/video/BV1XK4y1m7SH?spm_id_from=333.880.my_history.page.click&vd_source=7bfc63e37b43d920ff112a7b729b0a36">【家电测评】5年真实经验，全面解析洗碗机！超强干货！</a></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>装修</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清除浮动的方式</title>
+    <url>/2022/06/28/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p>（布局）</p>
+<span id="more"></span>
+
+
+<ol>
+<li><p>给父级盒子添加上height属性。<br>缺点：由于不清楚父盒子内容有多少，在很多情况下不方便对其给高度，理想做法是子盒子撑开父盒子。</p>
+</li>
+<li><p>额外标签法：在浮动元素末尾添加一个标签，eg: <div style='clear:both'></div><br>缺点：这添加了许多无意义的标签，结构化较差。</p>
+</li>
+<li><p>给父盒子添加overflow属性（）</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>面试题</category>
@@ -812,6 +793,26 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>嗝</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用CSS实现一个三角形</title>
+    <url>/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
+    <content><![CDATA[<p>（开发）<br>以上三角形为例</p>
+<span id="more"></span>
+
+
+<p>代码实现：</p>
+<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.png" class="">
+
+<p>原理分析：</p>
+<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" class="">
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
 </search>
