@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客框架Front-matter语法</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
-<span id="more"></span>
-
-
-<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
-<p>title<br>date: published date<br>categories<br>tags  </p>
-</blockquote>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CSS选择器及其优先级</title>
     <url>/2022/06/27/CSS%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%8A%E5%85%B6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
     <content><![CDATA[<p>（选择器）</p>
@@ -53,6 +29,108 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客框架Front-matter语法</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Front-matter%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>Front-matter is a block of Markdown at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">programmer</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
+<span id="more"></span>
+
+
+<h2 id="Setting"><a href="#Setting" class="headerlink" title="Setting"></a>Setting</h2><blockquote>
+<p>title<br>date: published date<br>categories<br>tags  </p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>使类别并列产生：  <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> [programmer]</span><br><span class="line"><span class="literal">-</span> [Front-End]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客框架NexT主题美化</title>
+    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
+<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
+<p>In order to resolve this issue, we recommend using the <a href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
+<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
+<span id="more"></span>
+
+
+<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
+<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: en<br>timezone: ‘Asia/Shanghai’<br>highlight-&gt;auto_detect<br>theme: next  </p>
+</blockquote>
+<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
+<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: home、categories、tags<br>menu_settings: badges<br>avatar: me<br>social: Github、E-Mail、Bilibili、Instagram<br>footer: </p>
+<blockquote>
+<p>since<br>icon-&gt;animated  </p>
+</blockquote>
+<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客框架命令行指令</title>
+    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<ul>
+<li>创建新文章<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
+拓：  <table>
+<thead>
+<tr>
+<th>布局（layout）</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>source/_posts</td>
+</tr>
+<tr>
+<td>page</td>
+<td>source</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>source/_drafts</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<span id="more"></span>
+
+
+<ul>
+<li><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo clean</p>
+</li>
+<li><p>生成静态文件<br>hexo g（即hexo generate）</p>
+</li>
+<li><p>启动服务器：默认情况下，访问网址为：<a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a><br>hexo s（即hexo server）</p>
+</li>
+<li><p>一键部署<br>npm i hexo-deployer-git –save<br>hexo d（即hexo deploy）</p>
+</li>
+<li><p>文件生成后立即部署网站<br>hexo g -d</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序员的自我修养</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客正文图片不显示解决方法</title>
     <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%AD%A3%E6%96%87%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>将图片放在<code>source/images</code>文件夹中，通过类似于<code>![](/images/image.jpg)</code>的Markdown语法来访问它们，发现图片在博客正文不显示。<br>注：<br>Hexo version: 5.4.2<br>NexT version: 8.12.1</p>
@@ -66,6 +144,36 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>absolute、fixed的共同点和不同点</title>
+    <url>/2022/06/28/absolute%E3%80%81fixed%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9%E5%92%8C%E4%B8%8D%E5%90%8C%E7%82%B9/</url>
+    <content><![CDATA[<p>（布局）</p>
+<span id="more"></span>
+
+
+<ul>
+<li>共同点：  <ol>
+<li>改变行内元素的呈现方式，将display设置为inline-block。</li>
+<li>使元素脱离普通文档流，不再占据文档物理空间。</li>
+<li>覆盖非定位文档元素。</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>不同点：<ol>
+<li>absolute和fixed的根元素不同，absolute的根元素可以设置，fixed的根元素是浏览器。</li>
+<li>在有滚动条的页面中，absolute会跟着父元素进行移动，fixed固定在页面的具体位置。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -181,111 +289,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客框架NexT主题美化</title>
-    <url>/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>: The first one is under site root directory, which contains Hexo’s config. The second one is under theme root directory, which is provided by NexT and contains theme’s config. Let’s call the first one – <code>Hexo config file</code>, and the second one – <code>NexT config file</code>.  </p>
-<p>We do not recommend directly modifying the <code>NexT config file</code>. It is quite often running into conflict status when updating NexT theme via git pull, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the NexT config file in node_modules.  </p>
-<p>In order to resolve this issue, we recommend using the <a href="https://hexo.io/docs/configuration.html#Alternate-Theme-Config">Alternate Theme Config</a> feature to configure theme NexT.</p>
-<p>We strongly recommend you to store your theme configuration in one place. But in case you have to store your theme configuration separately, you need to know the priority of those configurations: The theme_config inside site’s primary configuration file has the highest priority during merging, then the dedicated theme configuration file.<br>The _config.yml file under the theme directory has the lowest priority.</p>
+    <title>data为什么是一个函数而不是对象</title>
+    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>（基础知识）</p>
 <span id="more"></span>
 
 
-<h2 id="config-yml美化"><a href="#config-yml美化" class="headerlink" title="_config.yml美化"></a>_config.yml美化</h2><blockquote>
-<p>title: LIFE×WORK<br>subtitle: ‘知命不惧，日日自新’<br>description: ‘嘿，开心一点嘛’<br>author: Logan Jin<br>language: en<br>timezone: ‘Asia/Shanghai’<br>highlight-&gt;auto_detect<br>theme: next  </p>
-</blockquote>
-<h2 id="config-next-yml美化"><a href="#config-next-yml美化" class="headerlink" title="_config.next.yml美化"></a>_config.next.yml美化</h2><blockquote>
-<p>scheme: Gemini<br>darkmode: true<br>favicon: 建军<br>menu: home、categories、tags<br>menu_settings: badges<br>avatar: me<br>social: Github、E-Mail、Bilibili、Instagram<br>footer: </p>
-<blockquote>
-<p>since<br>icon-&gt;animated  </p>
-</blockquote>
-<p>back2top: scrollpercent<br>canvas_ribbon<br>npm install hexo-generator-searchdb<br>hexo new page tags<br>tag_icon: true<br>帖子部分显示，存在显示全文：<!--more--></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客框架命令行指令</title>
-    <url>/2022/06/21/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<ul>
-<li>创建新文章<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
-拓：  <table>
-<thead>
-<tr>
-<th>布局（layout）</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>source/_posts</td>
-</tr>
-<tr>
-<td>page</td>
-<td>source</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>source/_drafts</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<span id="more"></span>
-
-
-<ul>
-<li><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)<br>hexo clean</p>
-</li>
-<li><p>生成静态文件<br>hexo g（即hexo generate）</p>
-</li>
-<li><p>启动服务器：默认情况下，访问网址为：<a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a><br>hexo s（即hexo server）</p>
-</li>
-<li><p>一键部署<br>npm i hexo-deployer-git –save<br>hexo d（即hexo deploy）</p>
-</li>
-<li><p>文件生成后立即部署网站<br>hexo g -d</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序员的自我修养</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>absolute、fixed的共同点和不同点</title>
-    <url>/2022/06/28/absolute%E3%80%81fixed%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9%E5%92%8C%E4%B8%8D%E5%90%8C%E7%82%B9/</url>
-    <content><![CDATA[<p>（布局）</p>
-<span id="more"></span>
-
-
-<ul>
-<li>共同点：  <ol>
-<li>改变行内元素的呈现方式，将display设置为inline-block。</li>
-<li>使元素脱离普通文档流，不再占据文档物理空间。</li>
-<li>覆盖非定位文档元素。</li>
-</ol>
-</li>
-</ul>
-<ul>
-<li>不同点：<ol>
-<li>absolute和fixed的根元素不同，absolute的根元素可以设置，fixed的根元素是浏览器。</li>
-<li>在有滚动条的页面中，absolute会跟着父元素进行移动，fixed固定在页面的具体位置。</li>
-</ol>
-</li>
-</ul>
+<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
 ]]></content>
       <categories>
         <category>面试题</category>
       </categories>
       <tags>
-        <tag>CSS面试题</tag>
+        <tag>Vue面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -309,22 +325,6 @@
       </categories>
       <tags>
         <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>data为什么是一个函数而不是对象</title>
-    <url>/2022/06/23/data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>（基础知识）</p>
-<span id="more"></span>
-
-
-<p><code>组件</code>实例对象data必须为函数，目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数返回全新data对象，有效规避多实例对象之间数据污染问题；而由于根实例是<code>单例</code>，不会产生数据污染情况，所以<code>根</code>实例对象data可以是对象也可以是函数。</p>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>Vue面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -482,6 +482,25 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
+    <title>代码输出结果0</title>
+    <url>/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/</url>
+    <content><![CDATA[<p>（代码输出结果）</p>
+<img src="/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0.png" class="">
+
+
+<span id="more"></span>
+
+
+<p>JS的数组实际上为对象，对于<code>arr[0]=1;</code>而言，0实际上为属性的名字，而JS属性的名字只能是字符串，所以JS会自动把<code>0</code>转换为<code>&#39;0&#39;</code>，即arr[0]等价于arr[‘0’]。</p>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>JS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>土松记</title>
     <url>/2022/06/20/%E5%9C%9F%E6%9D%BE%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><ul>
@@ -528,25 +547,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>代码输出结果0</title>
-    <url>/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/</url>
-    <content><![CDATA[<p>（代码输出结果）</p>
-<img src="/2022/06/23/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0/%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C0.png" class="">
-
-
-<span id="more"></span>
-
-
-<p>JS的数组实际上为对象，对于<code>arr[0]=1;</code>而言，0实际上为属性的名字，而JS属性的名字只能是字符串，所以JS会自动把<code>0</code>转换为<code>&#39;0&#39;</code>，即arr[0]等价于arr[‘0’]。</p>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>JS面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -648,34 +648,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
-    <title>对盒子模型的理解</title>
-    <url>/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<p>（盒子模型）</p>
-<span id="more"></span>
-
-
-<ul>
-<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
-</li>
-<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
-</li>
-<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
-<ol>
-<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
-<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
-<li>inherit: 从父元素继承。</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对比v-if和v-show</title>
     <url>/2022/06/23/%E5%AF%B9%E6%AF%94v-if%E5%92%8Cv-show/</url>
     <content><![CDATA[<p>（基础知识）</p>
@@ -710,6 +682,58 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </tags>
   </entry>
   <entry>
+    <title>对盒子模型的理解</title>
+    <url>/2022/06/26/%E5%AF%B9%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<p>（盒子模型）</p>
+<span id="more"></span>
+
+
+<ul>
+<li><p>盒子模型由margin、border、padding、content四个部分组成。</p>
+</li>
+<li><p>盒子模型分为标准盒子模型和IE盒子模型（怪异盒子模型），IE盒子模型由CSS3新增。二者的区别在于设置width和height时对应的范围不同：标准盒子模型的width和height属性只包含了content，IE盒子模型的width和height属性包含了border、padding、content，因此border、padding不会撑大盒子。</p>
+</li>
+<li><p>可以通过修改box-sizing属性来改变元素的盒子模型：  </p>
+<ol>
+<li><code>box-sizing: content-box;</code>，表示标准盒子模型。  </li>
+<li><code>box-sizing: border-box</code>，表示IE盒子模型。  </li>
+<li>inherit: 从父元素继承。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>洗碗机</title>
+    <url>/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/</url>
+    <content><![CDATA[<p>temp</p>
+<h2 id="不能洗"><a href="#不能洗" class="headerlink" title="不能洗"></a>不能洗</h2><ul>
+<li>印花餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E5%8D%B0%E8%8A%B1%E9%A4%90%E5%85%B7.png" class="">  </li>
+<li>有金边餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%9C%89%E9%87%91%E8%BE%B9%E9%A4%90%E5%85%B7.png" class="">  </li>
+<li>实木制品：木碗、木筷子、木砧板、木铲等<br>推荐使用洗碗机专用筷子  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%B4%97%E7%A2%97%E6%9C%BA%E4%B8%93%E7%94%A8%E7%AD%B7%E5%AD%90.png" class="">  </li>
+</ul>
+<span id="more"></span>
+
+
+<h2 id="能洗"><a href="#能洗" class="headerlink" title="能洗"></a>能洗</h2><h2 id="洗不掉"><a href="#洗不掉" class="headerlink" title="洗不掉"></a>洗不掉</h2><ul>
+<li>鸡蛋羹</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://www.bilibili.com/video/BV1XK4y1m7SH?spm_id_from=333.880.my_history.page.click&vd_source=7bfc63e37b43d920ff112a7b729b0a36">【家电测评】5年真实经验，全面解析洗碗机！超强干货！</a></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>装修</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>清除浮动的方式</title>
     <url>/2022/06/28/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<p>（布局）</p>
@@ -724,6 +748,26 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
 <li><p>给父盒子添加overflow属性（）</p>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>CSS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用CSS实现一个三角形</title>
+    <url>/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
+    <content><![CDATA[<p>（开发）<br>以上三角形为例</p>
+<span id="more"></span>
+
+
+<p>代码实现：</p>
+<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.png" class="">
+
+<p>原理分析：</p>
+<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" class="">
 ]]></content>
       <categories>
         <category>面试题</category>
@@ -769,50 +813,6 @@ install <code>hexo-renderer-swig</code> manually:<figure class="highlight coffee
       </categories>
       <tags>
         <tag>嗝</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用CSS实现一个三角形</title>
-    <url>/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
-    <content><![CDATA[<p>（开发）<br>以上三角形为例</p>
-<span id="more"></span>
-
-
-<p>代码实现：</p>
-<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.png" class="">
-
-<p>原理分析：</p>
-<img src="/2022/06/26/%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2/%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" class="">
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>CSS面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>洗碗机.md</title>
-    <url>/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/</url>
-    <content><![CDATA[<p>temp</p>
-<h2 id="不能洗"><a href="#不能洗" class="headerlink" title="不能洗"></a>不能洗</h2><ul>
-<li>印花餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E5%8D%B0%E8%8A%B1%E9%A4%90%E5%85%B7.png" class="">  </li>
-<li>有金边餐具  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%9C%89%E9%87%91%E8%BE%B9%E9%A4%90%E5%85%B7.png" class="">  </li>
-<li>实木制品：木碗、木筷子、木砧板、木铲等<br>推荐使用洗碗机专用筷子  <img src="/2022/07/19/%E6%B4%97%E7%A2%97%E6%9C%BA/%E6%B4%97%E7%A2%97%E6%9C%BA%E4%B8%93%E7%94%A8%E7%AD%B7%E5%AD%90.png" class="">  </li>
-</ul>
-<span id="more"></span>
-
-
-<h2 id="能洗"><a href="#能洗" class="headerlink" title="能洗"></a>能洗</h2><h2 id="洗不掉"><a href="#洗不掉" class="headerlink" title="洗不掉"></a>洗不掉</h2><ul>
-<li>鸡蛋羹</li>
-</ul>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://www.bilibili.com/video/BV1XK4y1m7SH?spm_id_from=333.880.my_history.page.click&vd_source=7bfc63e37b43d920ff112a7b729b0a36">【家电测评】5年真实经验，全面解析洗碗机！超强干货！</a></p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>装修</tag>
       </tags>
   </entry>
 </search>
